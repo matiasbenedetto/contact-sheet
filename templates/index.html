@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","theme":"contact-sheet","tagName":"header"} /-->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"
+	style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+	<!-- wp:query {"queryId":34,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[],"format":[]},"align":"full","layout":{"type":"constrained","justifyContent":"left"}} -->
+	<div class="wp-block-query alignfull"><!-- wp:post-template -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+		<div class="wp-block-group">
+			<!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"style":{"typography":{"fontSize":"11px"}}} /-->
+
+			<!-- wp:contact-sheet/photo-strip {"sizeConstraint":"height","sizeValue":120,"borderRadius":0,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} /-->
+
+			<!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"fontSize":"medium"} /-->
+		</div>
+		<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:spacer {"height":"52px"} -->
+		<div style="height:52px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:query-pagination -->
+		<!-- wp:query-pagination-previous /-->
+
+		<!-- wp:query-pagination-numbers /-->
+
+		<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+		<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+		<p></p>
+		<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+</div>
+<!-- /wp:group -->

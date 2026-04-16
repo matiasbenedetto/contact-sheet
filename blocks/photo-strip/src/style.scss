@@ -1,0 +1,74 @@
+@keyframes photo-strip-fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.photo-strip-item {
+	margin-bottom: 2rem;
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+
+}
+
+.photo-strip-images {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 0.5rem;
+	overflow: hidden;
+}
+
+.photo-strip-image {
+	flex: 0 0 auto;
+	position: relative;
+	overflow: hidden;
+	height: var(--ps-height, 200px);
+	opacity: 0;
+	animation: photo-strip-fade-in 0.4s ease forwards;
+
+	img {
+		width: auto;
+		height: 100%;
+		display: block;
+		transition: opacity 0.2s ease, filter 0.2s ease;
+		border-radius: 3px;
+		filter: sepia(20%) contrast(1.05) brightness(0.97);
+	}
+
+	// Vintage vignette overlay
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: 3px;
+		pointer-events: none;
+		background: radial-gradient(
+			ellipse at center,
+			transparent 40%,
+			rgba(0, 0, 0, 0.55) 100%
+		);
+		mix-blend-mode: multiply;
+		transition: opacity 0.2s ease;
+	}
+
+	a:hover img {
+		opacity: 0.85;
+		filter: sepia(10%) contrast(1.02) brightness(1);
+	}
+
+	a:hover &::after {
+		opacity: 0.6;
+	}
+}
+
+@media (max-width: 768px) {
+	.photo-strip-images {
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		-webkit-overflow-scrolling: touch;
+	}
+}

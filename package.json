@@ -1,0 +1,15 @@
+{
+  "name": "contact-sheet",
+  "version": "1.0.0",
+  "description": "Contact Sheet — WordPress block theme",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build --webpack-src-dir=blocks/photo-strip/src --output-path=blocks/photo-strip/build",
+    "start": "wp-scripts start --webpack-src-dir=blocks/photo-strip/src --output-path=blocks/photo-strip/build",
+    "lint:js": "wp-scripts lint-js blocks/photo-strip/src",
+    "lint:css": "wp-scripts lint-style blocks/photo-strip/src"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  }
+}

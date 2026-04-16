@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "620px",
+			"wideSize": "1000px"
+		},
+		"spacing": {
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "system-ui, sans-serif",
+					"name": "System UI",
+					"slug": "system-ui"
+				},
+				{
+					"fontFamily": "\"Nimbus Mono PS\", \"Courier New\", monospace",
+					"name": "Monospace Slab Serif",
+					"slug": "monospace-slab-serif"
+				},
+				{
+					"fontFamily": "Bahnschrift, \"DIN Alternate\", \"Franklin Gothic Medium\", \"Nimbus Sans Narrow\", sans-serif-condensed, sans-serif",
+					"name": "Industrial",
+					"slug": "industrial"
+				},
+				{
+					"fontFamily": "\"Cal Sans\", sans-serif",
+					"name": "Cal Sans",
+					"slug": "cal-sans",
+					"fontFace": [
+						{
+							"fontFamily": "Cal Sans",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/CalSans-SemiBold.ttf"
+							]
+						}
+					]
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"css": "body { overflow-x: clip; } .wp-block-site-logo img { transition: filter 0.3s ease; } .wp-block-site-logo a:hover img { filter: none !important; }",
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--system-ui)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--system-ui)"
+				}
+			}
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--cal-sans)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--black)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--system-ui)"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	]
+}

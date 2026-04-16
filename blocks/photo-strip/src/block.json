@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "contact-sheet/photo-strip",
+  "title": "Photo Strip",
+  "category": "theme",
+  "icon": "format-gallery",
+  "description": "Display a post's images in a horizontal scrolling strip.",
+  "keywords": ["photos", "images", "gallery", "post"],
+  "version": "1.0.0",
+  "textdomain": "contact-sheet",
+  "attributes": {
+    "aspectRatio": {
+      "type": "string",
+      "default": "original"
+    },
+    "sizeConstraint": {
+      "type": "string",
+      "default": "none"
+    },
+    "sizeValue": {
+      "type": "number",
+      "default": 200
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 4
+    }
+  },
+  "usesContext": ["postId", "postType"],
+  "supports": {
+    "html": false,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
