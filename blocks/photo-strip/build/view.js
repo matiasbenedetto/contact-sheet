@@ -1,0 +1,1 @@
+document.querySelectorAll(".photo-strip-image").forEach(e=>{const t=e.querySelector("img");if(!t)return;const o=()=>e.classList.add("is-loaded");t.complete&&t.naturalWidth>0?o():t.addEventListener("load",o)});

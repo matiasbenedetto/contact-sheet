@@ -39,7 +39,7 @@
 		filter: sepia(20%) contrast(1.05) brightness(0.97);
 	}
 
-	// Vintage vignette overlay — intensity varies per image via --vignette-opacity
+	// Vintage vignette overlay — hidden until image loads, intensity per image via --vignette-opacity
 	&::after {
 		content: '';
 		position: absolute;
@@ -52,8 +52,12 @@
 			rgba(0, 0, 0, 0.55) 100%
 		);
 		mix-blend-mode: multiply;
+		opacity: 0;
+		transition: opacity 0.4s ease;
+	}
+
+	&.is-loaded::after {
 		opacity: var(--vignette-opacity, 1);
-		transition: opacity 0.2s ease;
 	}
 
 	a:hover img {
