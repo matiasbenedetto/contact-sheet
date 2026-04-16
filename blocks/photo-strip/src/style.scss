@@ -72,3 +72,16 @@
 		-webkit-overflow-scrolling: touch;
 	}
 }
+
+// Editor overrides — disable full-bleed and animation inside the editor iframe
+.editor-styles-wrapper {
+	.photo-strip-item {
+		width: auto;
+		margin-left: 0;
+	}
+
+	.photo-strip-image {
+		opacity: 1;
+		animation: none;
+	}
+}

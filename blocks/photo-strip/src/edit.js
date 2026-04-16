@@ -59,17 +59,7 @@ export default function Edit( { attributes, setAttributes, context } ) {
 
 	const images = extractImages( post.content?.rendered || '' );
 
-	const imgStyle = ( () => {
-		const s = { borderRadius: borderRadius + 'px' };
-		if ( sizeConstraint === 'height' ) {
-			s.height = sizeValue + 'px';
-			s.width = 'auto';
-		} else if ( sizeConstraint === 'width' ) {
-			s.width = sizeValue + 'px';
-			s.height = 'auto';
-		}
-		return s;
-	} )();
+	const imgStyle = { borderRadius: borderRadius + 'px' };
 
 	return (
 		<>
@@ -111,7 +101,7 @@ export default function Edit( { attributes, setAttributes, context } ) {
 			<div { ...blockProps }>
 				<div className="photo-strip-item">
 					{ images.length > 0 ? (
-						<div className="photo-strip-images">
+						<div className="photo-strip-images" style={{ '--ps-height': sizeValue + 'px' }}>
 							{ images.map( ( image, index ) => (
 								<div
 									key={ index }
