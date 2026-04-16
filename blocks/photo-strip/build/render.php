@@ -34,7 +34,7 @@ if ( empty( $images ) ) {
 		<?php foreach ( $images as $index => $image ) : ?>
 			<div
 				class="photo-strip-image"
-				style="border-radius: <?php echo intval( $border_radius ); ?>px; animation-delay: <?php printf( '%.2f', $index * 0.06 ); ?>s"
+				style="border-radius: <?php echo intval( $border_radius ); ?>px; animation-delay: <?php printf( '%.2f', $index * 0.06 ); ?>s; --vignette-opacity: <?php printf( '%.2f', mt_rand( 30, 100 ) / 100 ); ?>"
 			>
 				<a href="<?php echo esc_url( $permalink ); ?>">
 					<img
