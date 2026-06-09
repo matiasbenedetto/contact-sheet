@@ -28,13 +28,16 @@
 	overflow: hidden;
 	height: var(--ps-height, 200px);
 	opacity: 0;
-	animation: photo-strip-fade-in 0.4s ease forwards;
+
+	&.is-loaded {
+		animation: photo-strip-fade-in 0.4s ease forwards;
+	}
 
 	img {
 		width: auto;
 		height: 100%;
 		display: block;
-		transition: opacity 0.2s ease, filter 0.2s ease;
+		transition: opacity 0.2s ease, filter 0.2s ease, transform 0.3s ease;
 		border-radius: 3px;
 		filter: sepia(20%) contrast(1.05) brightness(0.97);
 	}
@@ -63,6 +66,7 @@
 	a:hover img {
 		opacity: 0.85;
 		filter: sepia(10%) contrast(1.02) brightness(1);
+		transform: scale(1.05);
 	}
 
 	a:hover &::after {
