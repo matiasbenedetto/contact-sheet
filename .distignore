@@ -1,0 +1,27 @@
+# Files & directories excluded from the WordPress.org deploy.
+# Everything listed here is dev-only; the built `blocks/photo-strip/build/`
+# directory is committed and IS shipped.
+
+# Dev tooling / VCS
+/.git
+/.github
+/.claude
+/.codex
+/node_modules
+/scripts
+/dist
+
+# Block sources (only the compiled build/ is shipped)
+/blocks/photo-strip/src
+
+# Project meta
+/package.json
+/package-lock.json
+/.gitignore
+/.distignore
+contact-sheet.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
