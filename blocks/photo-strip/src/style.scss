@@ -52,7 +52,7 @@
 		background: radial-gradient(
 			ellipse at center,
 			transparent 40%,
-			rgba(0, 0, 0, 0.55) 100%
+			rgba(0, 0, 0, 0.2) 100%
 		);
 		mix-blend-mode: multiply;
 		opacity: 0;
@@ -65,12 +65,31 @@
 
 	a:hover img {
 		opacity: 0.85;
-		filter: sepia(10%) contrast(1.02) brightness(1);
+		filter: sepia(10%) contrast(1.02) brightness(1) saturate(110%);
 		transform: scale(1.05);
 	}
 
 	a:hover &::after {
-		opacity: 0.6;
+		opacity: 0.25;
+	}
+
+	// Gray fallback when the post has no images (inside a Query Loop)
+	&.is-placeholder {
+		opacity: 1;
+		animation: none;
+		background: #d0d0d0;
+		aspect-ratio: 3 / 2;
+		border-radius: 3px; // match the hardcoded radius on img
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		&::after {
+			opacity: var(--vignette-opacity, 1);
+		}
 	}
 }
 
