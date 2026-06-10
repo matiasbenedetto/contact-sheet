@@ -1,16 +1,16 @@
 /*
 Theme Name: Contact Sheet
-Theme URI:
-Author:
-Author URI:
-Description:
+Theme URI: https://github.com/matiasbenedetto/contact-sheet
+Author: Matias Benedetto
+Author URI: https://mebenedetto.com
+Description: A minimal photography blog theme that presents each post's images as a film-style contact sheet. Posts on the home page render their photos in a horizontal scrolling strip, evoking the look of a photographer's proof sheet.
 Requires at least: 6.8
 Tested up to: 6.8
-Requires PHP: 5.7
+Requires PHP: 7.2
 Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: contact-sheet
-Tags:
+Tags: blog, photography, one-column, custom-logo, block-patterns, block-styles, full-site-editing, translation-ready
 */
 

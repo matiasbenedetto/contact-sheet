@@ -7,10 +7,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Register the Photo Strip block from its build directory.
  * Assets and render template are declared in build/block.json.
  */
-function photo_strip_register_block() {
+function contact_sheet_photo_strip_register_block() {
 	register_block_type( get_theme_file_path( 'blocks/photo-strip/build' ) );
 }
-add_action( 'init', 'photo_strip_register_block' );
+add_action( 'init', 'contact_sheet_photo_strip_register_block' );
 
 /**
  * Extract all images from post content.
@@ -19,7 +19,7 @@ add_action( 'init', 'photo_strip_register_block' );
  * @param string $content Raw post content.
  * @return array<array{src:string,alt:string}>
  */
-function photo_strip_extract_images( $content ) {
+function contact_sheet_photo_strip_extract_images( $content ) {
 	$images = array();
 	$seen   = array();
 
@@ -33,7 +33,7 @@ function photo_strip_extract_images( $content ) {
 
 			// Prefer the smallest generated size that preserves the original aspect ratio.
 			if ( preg_match( '/\bwp-image-(\d+)\b/', $tag, $id_match ) ) {
-				$size = photo_strip_smallest_uncropped_size( intval( $id_match[1] ) );
+				$size = contact_sheet_photo_strip_smallest_uncropped_size( intval( $id_match[1] ) );
 				if ( $size ) {
 					$url = wp_get_attachment_image_url( intval( $id_match[1] ), $size );
 					if ( $url ) {
@@ -60,7 +60,7 @@ function photo_strip_extract_images( $content ) {
  * @param int $attachment_id
  * @return string|null Size slug, or null if none qualifies.
  */
-function photo_strip_smallest_uncropped_size( $attachment_id ) {
+function contact_sheet_photo_strip_smallest_uncropped_size( $attachment_id ) {
 	$meta = wp_get_attachment_metadata( $attachment_id );
 	if ( empty( $meta['sizes'] ) || empty( $meta['width'] ) || empty( $meta['height'] ) ) {
 		return null;
