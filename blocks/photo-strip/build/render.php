@@ -22,7 +22,7 @@ if ( ! $post ) {
 $size_value    = isset( $attributes['sizeValue'] )    ? intval( $attributes['sizeValue'] )    : 200;
 $border_radius = isset( $attributes['borderRadius'] ) ? intval( $attributes['borderRadius'] ) : 4;
 
-$images    = photo_strip_extract_images( $post->post_content );
+$images    = contact_sheet_photo_strip_extract_images( $post->post_content );
 $permalink = get_permalink( $post_id );
 
 if ( empty( $images ) ) {

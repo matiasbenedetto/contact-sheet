@@ -7,7 +7,7 @@
   "icon": "format-gallery",
   "description": "Display a post's images in a horizontal scrolling strip.",
   "keywords": ["photos", "images", "gallery", "post"],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "textdomain": "contact-sheet",
   "attributes": {
     "aspectRatio": {
