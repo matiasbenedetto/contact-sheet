@@ -25,16 +25,28 @@ $border_radius = isset( $attributes['borderRadius'] ) ? intval( $attributes['bor
 $images    = contact_sheet_photo_strip_extract_images( $post->post_content );
 $permalink = get_permalink( $post_id );
 
-if ( empty( $images ) ) {
+// Inside a Query Loop, core/post-template provides the postId context.
+// (queryId is not forwarded to grandchildren on the server side.)
+$in_query_loop = isset( $block->context['postId'] );
+
+if ( empty( $images ) && ! $in_query_loop ) {
 	return;
 }
 ?>
 <div <?php echo get_block_wrapper_attributes( array( 'class' => 'photo-strip-item' ) ); ?>>
 	<div class="photo-strip-images" style="--ps-height: <?php echo intval( $size_value ); ?>px">
+		<?php if ( empty( $images ) ) : ?>
+			<div
+				class="photo-strip-image is-placeholder"
+				style="border-radius: <?php echo max( intval( $border_radius ), 3 ); ?>px;"
+			>
+				<a href="<?php echo esc_url( $permalink ); ?>" aria-label="<?php echo esc_attr( get_the_title( $post_id ) ); ?>"></a>
+			</div>
+		<?php endif; ?>
 		<?php foreach ( $images as $index => $image ) : ?>
 			<div
 				class="photo-strip-image"
-				style="border-radius: <?php echo intval( $border_radius ); ?>px; animation-delay: <?php printf( '%.2f', $index * 0.06 ); ?>s; --vignette-opacity: <?php printf( '%.2f', mt_rand( 30, 100 ) / 100 ); ?>"
+				style="border-radius: <?php echo max( intval( $border_radius ), 3 ); ?>px; animation-delay: <?php printf( '%.2f', $index * 0.06 ); ?>s; --vignette-opacity: <?php printf( '%.2f', mt_rand( 30, 100 ) / 100 ); ?>"
 			>
 				<a href="<?php echo esc_url( $permalink ); ?>">
 					<img

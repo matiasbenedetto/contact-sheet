@@ -31,7 +31,7 @@ function extractImages( content ) {
 export default function Edit( { attributes, setAttributes, context } ) {
 	const blockProps = useBlockProps();
 	const { aspectRatio, sizeConstraint, sizeValue, borderRadius } = attributes;
-	const { postId, postType } = context;
+	const { postId, postType, queryId } = context;
 
 	const post = useSelect(
 		( select ) => {
@@ -110,6 +110,10 @@ export default function Edit( { attributes, setAttributes, context } ) {
 									<img src={ image.src } alt={ image.alt } loading="lazy" style={ imgStyle } />
 								</div>
 							) ) }
+						</div>
+					) : queryId !== undefined ? (
+						<div className="photo-strip-images" style={{ '--ps-height': sizeValue + 'px' }}>
+							<div className="photo-strip-image is-placeholder" style={ imgStyle } />
 						</div>
 					) : (
 						<p>{ __( 'No images found in this post.', 'contact-sheet' ) }</p>

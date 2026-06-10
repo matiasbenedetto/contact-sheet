@@ -27,7 +27,7 @@
       "default": 4
     }
   },
-  "usesContext": ["postId", "postType"],
+  "usesContext": ["postId", "postType", "queryId"],
   "supports": {
     "html": false,
     "align": true,
