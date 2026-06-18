@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Forest",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#1b3a2b",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#eef1e6",
+					"name": "Secondary"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "grayscale",
+					"name": "Grayscale",
+					"colors": [
+						"#1b3a2b",
+						"#eef1e6"
+					]
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Noir",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#f5f5f5",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#111111",
+					"name": "Secondary"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "grayscale",
+					"name": "Grayscale",
+					"colors": [
+						"#111111",
+						"#f5f5f5"
+					]
+				}
+			]
+		}
+	}
+}

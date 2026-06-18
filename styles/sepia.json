@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Sepia",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#3b2f2f",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#f4ecd8",
+					"name": "Secondary"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "grayscale",
+					"name": "Grayscale",
+					"colors": [
+						"#3b2f2f",
+						"#f4ecd8"
+					]
+				}
+			]
+		}
+	}
+}
