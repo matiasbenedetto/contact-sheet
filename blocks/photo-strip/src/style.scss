@@ -20,6 +20,9 @@
 	flex-wrap: nowrap;
 	gap: 0.5rem;
 	overflow: hidden;
+	// Vertical breathing room so each photo's drop shadow isn't clipped by the
+	// overflow:hidden that keeps the full-bleed strip from spilling sideways.
+	padding-block: 0.5rem;
 }
 
 .photo-strip-image {
@@ -28,6 +31,8 @@
 	overflow: hidden;
 	height: var(--ps-height, 200px);
 	opacity: 0;
+	// Lift the print off the surface; theme-aware so it works on every variation.
+	box-shadow: var(--cs-photo-shadow-sm);
 
 	&.is-loaded {
 		animation: photo-strip-fade-in 0.4s ease forwards;
