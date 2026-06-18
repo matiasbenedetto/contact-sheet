@@ -5,8 +5,8 @@
  * Inserter: no
  */
 ?>
-<!-- wp:paragraph {"align":"left","style":{"typography":{"fontSize":"10px"},"color":{"text":"#999999"},"elements":{"link":{"color":{"text":"#999999"}}}}} -->
-<p class="has-text-align-left has-text-color has-link-color" style="color:#999999;font-size:10px"><?php
+<!-- wp:paragraph {"align":"left","className":"cs-footer-credits","style":{"typography":{"fontSize":"10px"}}} -->
+<p class="has-text-align-left cs-footer-credits" style="font-size:10px"><?php
 	printf(
 		/* translators: 1: Contact Sheet theme link, 2: Benedetto link. */
 		esc_html__( 'Rendering %1$s a %2$s theme', 'contact-sheet' ),

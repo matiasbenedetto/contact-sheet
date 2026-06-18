@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Blueprint",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#d6e6f2",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#102a43",
+					"name": "Secondary"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "grayscale",
+					"name": "Grayscale",
+					"colors": [
+						"#102a43",
+						"#d6e6f2"
+					]
+				}
+			]
+		}
+	}
+}

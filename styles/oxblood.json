@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Oxblood",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#5c1a1b",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#f7f0e8",
+					"name": "Secondary"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "grayscale",
+					"name": "Grayscale",
+					"colors": [
+						"#5c1a1b",
+						"#f7f0e8"
+					]
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Gray Dark",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#e6e6e6",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#2e2e2e",
+					"name": "Secondary"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "grayscale",
+					"name": "Grayscale",
+					"colors": [
+						"#2e2e2e",
+						"#e6e6e6"
+					]
+				}
+			]
+		}
+	}
+}

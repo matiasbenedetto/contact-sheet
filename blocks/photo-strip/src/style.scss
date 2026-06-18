@@ -52,7 +52,7 @@
 		background: radial-gradient(
 			ellipse at center,
 			transparent 40%,
-			rgba(0, 0, 0, 0.2) 100%
+			color-mix(in srgb, var(--wp--preset--color--primary) 20%, transparent) 100%
 		);
 		mix-blend-mode: multiply;
 		opacity: 0;
@@ -73,11 +73,13 @@
 		opacity: 0.25;
 	}
 
-	// Gray fallback when the post has no images (inside a Query Loop)
+	// Neutral fallback when the post has no images (inside a Query Loop) —
+	// a light tint of the primary color over the page surface, so it adapts
+	// to whichever style variation is active.
 	&.is-placeholder {
 		opacity: 1;
 		animation: none;
-		background: #d0d0d0;
+		background: color-mix(in srgb, var(--wp--preset--color--primary) 18%, var(--wp--preset--color--secondary));
 		aspect-ratio: 3 / 2;
 		border-radius: 3px; // match the hardcoded radius on img
 
