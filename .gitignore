@@ -4,6 +4,9 @@ node_modules/
 .claude/
 .codex/
 
+# Local, machine-specific dev/deploy notes (not committed)
+AGENTS.local.md
+
 # Logs
 logs
 *.log
