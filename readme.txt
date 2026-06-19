@@ -62,3 +62,8 @@ Copyright (c) 2022 CalCom, Inc.
 License: SIL Open Font License, Version 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://github.com/calcom/font
 Included in: assets/fonts/CalSans-SemiBold.ttf (license text in assets/fonts/OFL.txt)
+
+Images
+All images (screenshot.png and the images in screenshots/) are photographs taken by Matias Benedetto, https://mebenedetto.com
+Copyright (c) 2025 Matias Benedetto
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/
