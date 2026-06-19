@@ -36,6 +36,9 @@ rsync -a \
   --exclude 'blocks/photo-strip/src' \
   --exclude '.DS_Store' \
   --exclude '*.log' \
+  --exclude '*.mjs' \
+  --exclude 'README.md' \
+  --exclude 'screenshots' \
   ./ "$STAGE/"
 
 echo "▶ Zipping…"
