@@ -9,20 +9,21 @@
 }
 
 .photo-strip-item {
-	margin-bottom: 2rem;
+	// No vertical margin here — the surrounding block gap controls the spacing
+	// between the strip and the post date/title, so the box hugs the photos.
 	width: 100vw;
 	margin-left: calc(50% - 50vw);
-
 }
 
 .photo-strip-images {
 	display: flex;
 	flex-wrap: nowrap;
 	gap: 0.5rem;
-	overflow: hidden;
-	// Vertical breathing room so each photo's drop shadow isn't clipped by the
-	// overflow:hidden that keeps the full-bleed strip from spilling sideways.
-	padding-block: 0.5rem;
+	// `clip` + clip-margin keeps the full-bleed strip from spilling sideways
+	// while still letting each photo's drop shadow show — without adding any
+	// vertical padding that would make the box taller than the photos.
+	overflow: clip;
+	overflow-clip-margin: 0.6rem;
 }
 
 .photo-strip-image {
