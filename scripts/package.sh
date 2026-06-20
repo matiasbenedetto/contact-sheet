@@ -32,13 +32,19 @@ rsync -a \
   --exclude 'package.json' \
   --exclude 'package-lock.json' \
   --exclude '.gitignore' \
+  --exclude '.distignore' \
   --exclude '*.zip' \
   --exclude 'blocks/photo-strip/src' \
   --exclude '.DS_Store' \
   --exclude '*.log' \
   --exclude '*.mjs' \
   --exclude 'README.md' \
+  --exclude 'AGENTS.md' \
+  --exclude 'AGENTS.local.md' \
+  --exclude 'CLAUDE.md' \
   --exclude 'screenshots' \
+  --exclude 'playground' \
+  --exclude 'workdir' \
   ./ "$STAGE/"
 
 echo "▶ Zipping…"
