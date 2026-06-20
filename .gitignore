@@ -4,6 +4,9 @@ node_modules/
 .claude/
 .codex/
 
+# Playground dev harness scratch (site state, synced theme, logs)
+workdir/
+
 # Local, machine-specific dev/deploy notes (not committed)
 AGENTS.local.md
 
