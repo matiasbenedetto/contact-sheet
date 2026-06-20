@@ -6,16 +6,17 @@
 #   1. pick a release type        -> patch | minor | major
 #   2. pick changelog entries     -> toggle which commits since the last
 #      release become changelog bullets (auto-filtered, editable)
-#   3. pick commit + tag          -> yes | no
+#   3. pick publish               -> yes | no  (commit, tag, push, GitHub release)
 #
 # Then bumps the version in style.css / readme.txt / package.json, prepends
-# the changelog section, builds the block assets and produces a
-# production-only ${SLUG}.zip.
+# the changelog section, builds the block assets, produces a production-only
+# ${SLUG}.zip, and (if you publish) commits, tags, pushes and attaches the
+# zip to a GitHub release for the new version.
 #
 # Usage:
 #   bash scripts/release.sh                      # fully interactive
 #   bash scripts/release.sh patch                # type pre-selected
-#   bash scripts/release.sh patch --commit       # type + commit pre-selected
+#   bash scripts/release.sh patch --commit       # type + publish pre-selected
 #   DRY_RUN=1 bash scripts/release.sh patch      # preview, no writes/build
 #
 # Flags can be combined; any flag you pass skips its interactive prompt so
@@ -29,9 +30,13 @@ cd "$ROOT"
 
 DRY_RUN="${DRY_RUN:-0}"
 
-# --- cleanup: always restore the terminal cursor ---------------------------
+# --- cleanup: always restore the terminal cursor + scratch files -----------
 
-cleanup() { printf '\e[?25h' >&2; }
+NOTES_FILE=""
+cleanup() {
+	printf '\e[?25h' >&2
+	[ -n "$NOTES_FILE" ] && rm -f "$NOTES_FILE"
+}
 trap cleanup EXIT
 
 # --- helpers ---------------------------------------------------------------
@@ -48,7 +53,8 @@ not given on the command line.
   minor    1.2.3 -> 1.3.0
   major    1.2.3 -> 2.0.0
 
-  --commit   Also commit the version bump and tag it (git tag = version).
+  --commit   Commit the bump, tag it, push, and publish a GitHub release
+             with ${SLUG}.zip attached (git tag = version).
   DRY_RUN=1  Preview the version bump and changelog without writing/building.
 EOF
 }
@@ -314,10 +320,10 @@ if [ "$DRY_RUN" = "1" ]; then
 	exit 0
 fi
 
-# --- option 3: commit + tag ------------------------------------------------
+# --- option 3: commit, tag & publish --------------------------------------
 
 if [ "$COMMIT_FLAG" -eq 0 ]; then
-	ANSWER="$(confirm "Commit the bump and tag ${NEW}?")"
+	ANSWER="$(confirm "Commit, tag, push & publish GitHub release ${NEW}?")"
 	[ "$ANSWER" = "yes" ] && COMMIT_FLAG=1
 fi
 
@@ -383,22 +389,56 @@ else
 	exit 1
 fi
 
-# --- optional commit + tag -------------------------------------------------
+# --- commit, tag, push & publish GitHub release ----------------------------
 
 if [ "$COMMIT_FLAG" -eq 1 ]; then
+	BRANCH="$(git symbolic-ref --quiet --short HEAD 2>/dev/null || true)"
+	if [ "$BRANCH" != "trunk" ]; then
+		echo "Refusing to publish: current branch is '${BRANCH:-detached}' but releases must come from 'trunk'." >&2
+		echo "Switch to trunk (git checkout trunk) and re-run, or publish manually." >&2
+		exit 1
+	fi
 	echo "▶ Committing and tagging ${NEW}…"
 	git add style.css readme.txt package.json
 	git commit -m "Bump theme version to ${NEW} and update changelog"
 	git tag "$NEW"
 	echo "✓ Committed and tagged ${NEW}"
+
+	echo "▶ Pushing commit and tag to origin…"
+	git push origin HEAD
+	git push origin "$NEW"
+	echo "✓ Pushed ${NEW}"
+
+	echo "▶ Publishing GitHub release ${NEW}…"
+	if ! command -v gh >/dev/null 2>&1; then
+		echo "The 'gh' CLI is required to publish a GitHub release." >&2
+		echo "Install it from https://cli.github.com, then create the release manually:" >&2
+		echo "  gh release create ${NEW} \"${ZIP}\" --title \"${NEW}\" --notes-file <changelog>" >&2
+		exit 1
+	fi
+	NOTES_FILE="$(mktemp)"
+	{
+		if [ -n "$NOTES" ]; then
+			while IFS= read -r line; do [ -n "$line" ] && printf '* %s\n' "$line"; done <<< "$NOTES"
+		else
+			echo '* Maintenance and behind-the-scenes updates.'
+		fi
+	} > "$NOTES_FILE"
+	gh release create "$NEW" "$ZIP" \
+		--title "$NEW" \
+		--notes-file "$NOTES_FILE"
+	rm -f "$NOTES_FILE"
+	echo "✓ Published GitHub release ${NEW} with ${ZIP}"
 	echo
-	echo "Next: git push && git push --tags"
+	echo "Done. Release ${NEW} is live on GitHub."
+	echo "Deploy with: npm run deploy"
 else
 	echo
-	echo "Next steps:"
+	echo "Next steps (run from trunk):"
 	echo "  git add style.css readme.txt package.json"
 	echo "  git commit -m 'Bump theme version to ${NEW} and update changelog'"
 	echo "  git tag ${NEW}"
-	echo "  git push && git push --tags"
+	echo "  git push origin HEAD && git push origin ${NEW}"
+	echo "  gh release create ${NEW} ${ZIP} --title ${NEW} --notes-file <changelog>"
 	echo "  Deploy with: npm run deploy"
 fi
