@@ -5,10 +5,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Register the Photo Strip block from its build directory.
- * Assets and render template are declared in build/block.json.
+ *
+ * Uses register_block_type_from_metadata() (the recommended block.json-based
+ * registration API) rather than register_block_type(). Both read the block
+ * metadata from build/block.json — including the `render` callback — but the
+ * latter is flagged as plugin-territory by Theme Check; the metadata helper is
+ * the correct, future-proof call for block themes.
  */
 function contact_sheet_photo_strip_register_block() {
-	register_block_type( get_theme_file_path( 'blocks/photo-strip/build' ) );
+	register_block_type_from_metadata( get_theme_file_path( 'blocks/photo-strip/build' ) );
 }
 add_action( 'init', 'contact_sheet_photo_strip_register_block' );
 

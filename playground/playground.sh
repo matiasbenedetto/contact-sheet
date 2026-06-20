@@ -16,6 +16,7 @@
 #   playground.sh sync                      rsync theme repo -> workdir/theme (run after edits)
 #   playground.sh wp -- <wp-cli args>       run wp-cli against the same site + mounts
 #   playground.sh seed [--force]            install Theme Check + create demo photo posts
+#   playground.sh check [--format=json]      run the Theme Check plugin, print a report
 #   playground.sh stop                      stop server (asserts clean teardown)
 #   playground.sh url                       print the live site URL
 #
@@ -23,11 +24,17 @@
 #   workdir/theme                       -> /wordpress/wp-content/themes/contact-sheet
 #   <repo>/playground                   -> /playground   (seed.php + assets/photos)
 #
+# Theme Check is installed from its GitHub master (a newer dev build than the
+# wp.org release) because that version ships a native `wp theme-check run`
+# command and correctly adapts its checks for block themes.
+#
 # Pinned versions (bump only after re-verifying the full bootstrap->seed->frontend chain):
 PLAYGROUND_VERSION="${PLAYGROUND_VERSION:-3.1.38}"   # @wp-playground/cli
 WP_VERSION="${WP_VERSION:-7.0}"                       # WordPress release
 PHP_VERSION="${PHP_VERSION:-8.3}"
 WPCLI_PHAR_URL="https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar"
+THEME_CHECK_ZIP="https://github.com/WordPress/theme-check/archive/refs/heads/master.zip"
+THEME_CHECK_MIN_VERSION="20260508"   # GitHub master build with wp-cli integration
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -232,9 +239,7 @@ cmd_seed() {
   cmd_ensure >/dev/null
   local force="0"
   [ "${1:-}" = "--force" ] && force="1"
-  echo "▶ installing Theme Check plugin…"
-  cmd_wp -- plugin install theme-check --activate || \
-    echo "  (theme-check already installed or install skipped)"
+  install_theme_check
   echo "▶ activating theme…"
   cmd_wp -- theme activate "$THEME_SLUG"
   echo "▶ seeding demo photo posts…"
@@ -246,6 +251,26 @@ cmd_seed() {
   cmd_wp -- cache flush || true
   echo "✓ seed complete"
   echo "Test it: $(cmd_url)"
+}
+
+# Install the GitHub (dev) build of Theme Check, which ships a native
+# `wp theme-check run` command. Idempotent: re-uses an installed GitHub build,
+# upgrades/replaces the wp.org release or a stale folder, and activates.
+install_theme_check() {
+  echo "▶ installing Theme Check plugin (GitHub dev build)…"
+  local installed="0"
+  if cmd_wp -- plugin is-installed theme-check 2>/dev/null; then installed="1"; fi
+  if [ "$installed" = "1" ]; then
+    local ver; ver=$(cmd_wp -- plugin get theme-check --field=version 2>/dev/null | tr -d '[:space:]')
+    if [[ "${ver:-0}" > "$THEME_CHECK_MIN_VERSION" || "${ver:-0}" == "$THEME_CHECK_MIN_VERSION" ]]; then
+      cmd_wp -- plugin activate theme-check 2>/dev/null || true
+      echo "  theme-check $ver already installed (GitHub build) — keeping it"
+      return 0
+    fi
+    echo "  replacing theme-check $ver with the GitHub dev build…"
+    cmd_wp -- plugin delete theme-check >/dev/null 2>&1 || true
+  fi
+  cmd_wp -- plugin install "$THEME_CHECK_ZIP" --activate
 }
 
 cmd_stop() {
@@ -266,6 +291,15 @@ cmd_stop() {
   echo "stopped clean (curl fails, no surviving process)"
 }
 
+cmd_check() {
+  cmd_ensure >/dev/null
+  # The GitHub dev build of Theme Check registers a native `wp theme-check run`
+  # command (table or --format=json). It exits 1 when it finds issues — that is
+  # the check working as intended, not a harness failure, so tolerate it.
+  # Pass any args through (e.g. --format=json, or a theme slug).
+  cmd_wp -- theme-check run "$@" || true
+}
+
 cmd_url() {
   [ -f "$PG/server.port" ] || die "no server running — try 'playground.sh ensure'"
   echo "http://127.0.0.1:$(cat "$PG/server.port")/"
@@ -277,7 +311,8 @@ case "${1:-}" in
   sync)      shift; cmd_sync "$@";;
   wp)        shift; cmd_wp "$@";;
   seed)      shift; cmd_seed "$@";;
+  check)     shift; cmd_check "$@";;
   stop)      shift; cmd_stop "$@";;
   url)       cmd_url;;
-  *) sed -n '3,17p' "$0"; exit 1;;
+  *) sed -n '3,18p' "$0"; exit 1;;
 esac

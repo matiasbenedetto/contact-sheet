@@ -3,9 +3,11 @@
 A self-contained local development environment for the Contact Sheet theme, built
 on **WordPress Playground** (PHP-WASM + SQLite). No Apache, no MySQL, no Docker —
 just Node. It spins up a real WordPress **7.0** site, mounts a clean copy of this
-theme into it, installs the **Theme Check** plugin, and seeds demo photo-blog
-content (posts full of photos, like [mebenedetto.com](https://mebenedetto.com)) so
-you can develop and visually review the theme offline.
+theme into it, installs the **Theme Check** plugin (from its [GitHub dev
+build](https://github.com/WordPress/theme-check), which ships a native `wp
+theme-check run` command), and seeds demo photo-blog content (posts full of
+photos, like [mebenedetto.com](https://mebenedetto.com)) so you can develop and
+visually review the theme offline.
 
 This replaces the old `http://localhost/wp3` Apache setup: edits live in this repo,
 a one-command `sync` pushes them into the running site, and the whole environment
@@ -43,6 +45,13 @@ Open the site:
 bash playground/playground.sh url           # http://127.0.0.1:<port>/
 ```
 
+Run the Theme Check plugin (native `wp theme-check run`):
+
+```bash
+bash playground/playground.sh check                  # human-readable table
+bash playground/playground.sh check --format=json     # machine-readable
+```
+
 If you stopped the server (or rebooted), bring it back with `ensure` — it reuses
 the recorded site and mounts, or starts fresh:
 
@@ -59,6 +68,7 @@ bash playground/playground.sh ensure
 | `sync` | rsync the theme from the repo root into `workdir/theme` (excludes `node_modules`, `.git`, `playground/`, etc.). Run after edits. |
 | `wp -- <args>` | Run wp-cli against the same site + mounts (downloads the phar on first use). |
 | `seed [--force]` | `ensure` + install Theme Check + activate theme + create demo posts/photos. `--force` tears down and re-creates prior demo content. |
+| `check [--format=json] [slug]` | Run the Theme Check plugin via its native `wp theme-check run` and print the report. Pass `--format=json` for machine-readable output, or a theme slug to check a non-active theme. |
 | `stop` | Stop the server and assert nothing survives. |
 | `url` | Print the live site URL. |
 
