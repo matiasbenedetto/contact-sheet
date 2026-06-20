@@ -3,7 +3,7 @@ Contributors: mmattiiaass
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, photography, one-column, custom-logo, block-patterns, block-styles, full-site-editing, translation-ready
@@ -21,6 +21,10 @@ Contact Sheet is a minimal block theme for photographers and photo bloggers. On 
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.2.1 =
+* Rounded button corners (3px) and restyled search inputs to match the design tokens
+* Limited archive and search results to 5 posts per page, matching the home page
 
 = 1.2.0 =
 * Added a comments section to single posts, with refined layout, full-bleed dividers, and a circular avatar
