@@ -60,6 +60,17 @@ To build a production zip from source: `npm install && npm run package` →
 
 ## Development
 
+The fastest way to develop the theme locally is the **Playground harness** in
+[`playground/`](playground/README.md) — a disposable WordPress 7.0 site with the
+Theme Check plugin and demo photo-blog content, no Apache/MySQL/Docker required:
+
+```bash
+bash playground/playground.sh bootstrap
+bash playground/playground.sh seed
+bash playground/playground.sh url      # open the live site
+# after editing: bash playground/playground.sh sync && bash playground/playground.sh wp -- cache flush
+```
+
 The Photo Strip block source lives in `blocks/photo-strip/src/` and is built
 into `blocks/photo-strip/build/`:
 
