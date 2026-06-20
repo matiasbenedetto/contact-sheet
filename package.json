@@ -1,7 +1,7 @@
 {
   "name": "contact-sheet",
-  "version": "1.2.1",
-  "description": "Contact Sheet — WordPress block theme",
+  "version": "1.2.2",
+  "description": "Contact Sheet \u2014 WordPress block theme",
   "private": true,
   "scripts": {
     "build": "wp-scripts build --webpack-src-dir=blocks/photo-strip/src --output-path=blocks/photo-strip/build",
