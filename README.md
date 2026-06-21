@@ -44,6 +44,13 @@ Date and term archives reuse the contact-sheet strips.
 
 ![404 page](screenshots/404.png)
 
+## Color variations
+
+The theme ships a two-color (paper/ink) palette with eight style variations on
+top of the default. Switch between them in **Appearance → Editor → Styles**.
+
+![Color variations](screenshots/color-variations.png)
+
 ## Requirements
 
 - WordPress 6.8+

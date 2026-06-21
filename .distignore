@@ -10,6 +10,8 @@
 /node_modules
 /scripts
 /dist
+/playground
+/workdir
 
 # Block sources (only the compiled build/ is shipped)
 /blocks/photo-strip/src
@@ -21,7 +23,16 @@
 /.distignore
 contact-sheet.zip
 
+# Docs & README assets (the root screenshot.jpg IS shipped; the
+# screenshots/ folder only feeds the README and is dev-only)
+/README.md
+/AGENTS.md
+/AGENTS.local.md
+/CLAUDE.md
+/screenshots
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
 *.log
+*.mjs
