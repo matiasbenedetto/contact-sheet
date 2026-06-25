@@ -6,6 +6,7 @@
  *
  * @package Contact_Sheet
  */
+
 ?>
 <!-- wp:heading {"level":1,"fontSize":"x-large"} -->
 <h1 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Page not found', 'contact-sheet' ); ?></h1>
