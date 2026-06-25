@@ -1,4 +1,10 @@
 <?php
+/**
+ * Photo Strip block registration and image-extraction helpers.
+ *
+ * @package Contact_Sheet
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
