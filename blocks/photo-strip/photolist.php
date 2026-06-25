@@ -57,7 +57,10 @@ function contact_sheet_photo_strip_extract_images( $content ) {
 				continue;
 			}
 			$seen[ $src ] = true;
-			$images[]     = array( 'src' => $src, 'alt' => $alt );
+			$images[]     = array(
+				'src' => $src,
+				'alt' => $alt,
+			);
 		}
 	}
 
