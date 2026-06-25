@@ -1,6 +1,8 @@
 <?php
 /**
  * Contact Sheet theme functions
+ *
+ * @package Contact_Sheet
  */
 
 // Load Photo Strip block.
