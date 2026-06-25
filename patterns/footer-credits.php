@@ -3,6 +3,8 @@
  * Title: Footer Credits
  * Slug: contact-sheet/footer-credits
  * Inserter: no
+ *
+ * @package Contact_Sheet
  */
 ?>
 <!-- wp:paragraph {"align":"left","className":"cs-footer-credits","style":{"typography":{"fontSize":"10px"}}} -->
