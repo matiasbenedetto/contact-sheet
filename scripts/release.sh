@@ -265,7 +265,7 @@ NEW="$(bump_version "$CURRENT" "$TYPE")"
 # tagged with their version (e.g. "1.2.3"), so the latest version tag is the
 # canonical marker — far more reliable than grepping commit messages, whose
 # wording has drifted ("Bump theme version to" vs "Bump version to").
-LAST_TAG="$(git tag --list --sort=-v:refname '[0-9]*.[0-9]*.[0-9]*' | head -n1)"
+LAST_TAG="$(git tag --list --sort=-v:refname '[0-9]*.[0-9]*.[0-9]*' 2>/dev/null | head -n1 || true)"
 if [ -n "$LAST_TAG" ]; then
 	RANGE="${LAST_TAG}..HEAD"
 else
