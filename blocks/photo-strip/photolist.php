@@ -71,7 +71,7 @@ function contact_sheet_photo_strip_extract_images( $content ) {
  * Find the smallest generated image size whose aspect ratio matches the original.
  * Skips cropped sizes like the default square "thumbnail".
  *
- * @param int $attachment_id
+ * @param int $attachment_id Attachment (image) post ID to inspect.
  * @return string|null Size slug, or null if none qualifies.
  */
 function contact_sheet_photo_strip_smallest_uncropped_size( $attachment_id ) {
