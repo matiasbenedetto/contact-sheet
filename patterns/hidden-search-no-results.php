@@ -6,6 +6,7 @@
  *
  * @package Contact_Sheet
  */
+
 ?>
 <!-- wp:paragraph -->
 <p><?php esc_html_e( 'No results found. Try a different search.', 'contact-sheet' ); ?></p>

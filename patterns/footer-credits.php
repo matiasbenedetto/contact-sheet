@@ -6,6 +6,7 @@
  *
  * @package Contact_Sheet
  */
+
 ?>
 <!-- wp:paragraph {"align":"left","className":"cs-footer-credits","style":{"typography":{"fontSize":"10px"}}} -->
 <p class="has-text-align-left cs-footer-credits" style="font-size:10px"><?php
