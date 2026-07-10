@@ -69,10 +69,28 @@
 		opacity: var(--vignette-opacity, 1);
 	}
 
+	a {
+		display: block;
+		height: 100%;
+	}
+
 	a:hover img {
 		opacity: 0.85;
 		filter: sepia(10%) contrast(1.02) brightness(1) saturate(110%);
 		transform: scale(1.05);
+	}
+
+	// Keyboard focus indicator. The default outline sits just outside the link
+	// and gets clipped by this container's `overflow: hidden`, so draw an inset
+	// outline instead, plus a ring on the container — the two-tone pair stays
+	// visible over both light and dark photos.
+	a:focus-visible {
+		outline: 2px solid var(--wp--preset--color--secondary);
+		outline-offset: -4px;
+	}
+
+	&:has(a:focus-visible) {
+		box-shadow: 0 0 0 2px var(--wp--preset--color--primary), var(--cs-photo-shadow-sm);
 	}
 
 	a:hover &::after {
