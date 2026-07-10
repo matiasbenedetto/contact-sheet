@@ -48,7 +48,16 @@ if ( empty( $images ) && ! $in_query_loop ) {
 				class="photo-strip-image"
 				style="border-radius: <?php echo max( intval( $border_radius ), 3 ); ?>px; animation-delay: <?php printf( '%.2f', $index * 0.06 ); ?>s; --vignette-opacity: <?php printf( '%.2f', mt_rand( 30, 100 ) / 100 ); ?>"
 			>
-				<a href="<?php echo esc_url( $permalink ); ?>">
+				<?php // Every image links to the same post — expose only the first
+				// link to keyboard/AT users; the rest stay mouse-clickable. ?>
+				<a
+					href="<?php echo esc_url( $permalink ); ?>"
+					<?php if ( 0 === $index ) : ?>
+						aria-label="<?php echo esc_attr( get_the_title( $post_id ) ); ?>"
+					<?php else : ?>
+						tabindex="-1" aria-hidden="true"
+					<?php endif; ?>
+				>
 					<img
 						src="<?php echo esc_url( $image['src'] ); ?>"
 						alt="<?php echo esc_attr( $image['alt'] ); ?>"
