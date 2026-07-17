@@ -178,31 +178,35 @@ diagonals in deep-shadow monochrome.*
 - **Text paragraph:** Zigzag, landing, zigzag, landing — a stair is a rhythm
   bolted to a wall. I waited for the sun to cut it into hard diagonals and shot
   the repetition until it started to sound like something.
-- **Image grade:** High-contrast monochrome, hard raking sidelight, strong
-  diagonal shadows across the frame.
+- **Image grade:** Saturated natural color, hard raking sidelight, strong
+  diagonal shadows; rust-red and mint-green painted metal against pale concrete
+  and deep blue sky.
 - **Image set description:** Exterior fire-escape and stair runs seen
   obliquely, treads and rails forming repeating diagonals; a couple of frames
   tightening on the shadow pattern alone.
 - **Image gallery:**
   1. A full external stair tower zigzagging up a concrete flank, flights and
-     landings stacking into a rhythmic ladder, hard sun throwing black diagonal
-     shadows, silvery greys on the lit faces | office block, Chicago | Leica M6,
-     Kodak Tri-X 400 | portrait
+     landings stacking into a rhythmic ladder, hard sun throwing dark diagonal
+     shadows, rust-red painted steel glowing warm on the lit faces against a
+     blue sky | office block, Chicago | Leica M6, Kodak Portra 400 | portrait
   2. Two flights meeting at a landing, the crisscross of their diagonals
-     forming an X across the frame, gritty concrete treads, deep shadow beneath
-     | same block, Chicago | Leica M6, Kodak Tri-X 400 | square
+     forming an X across the frame, gritty grey concrete treads, chipped
+     mint-green railings, deep shadow beneath | same block, Chicago | Leica M6,
+     Kodak Portra 400 | square
   3. Looking up through the open stringers, undersides of the treads striping
-     the frame with light and dark bars, aggregate texture, steep low angle |
-     same block, Chicago | Leica M6, Kodak Tri-X 400 | portrait
-  4. Pure shadow study — the cast shadow of a handrail rippling across a blank
-     concrete wall, no stair visible, just black bars on pale grey, flat frontal
-     | same block, Chicago | Leica M6, Kodak Tri-X 400 | landscape
-  5. A single flight in raking light, each tread edge a bright line above its
-     own shadow, worn nosing, oblique downward view | same block, Chicago |
-     Leica M6, Kodak Tri-X 400 | landscape
+     the frame with bands of warm sunlit orange and cool blue shadow, aggregate
+     texture, steep low angle | same block, Chicago | Leica M6, Kodak Portra 400
+     | portrait
+  4. Pure shadow study — the cast shadow of a handrail rippling across a sunlit
+     ochre concrete wall, no stair visible, just soft blue-violet bars on warm
+     stucco, flat frontal | same block, Chicago | Leica M6, Kodak Portra 400 |
+     landscape
+  5. A single flight in raking light, each tread edge a bright warm line above
+     its own cool shadow, worn red nosing, oblique downward view | same block,
+     Chicago | Leica M6, Kodak Portra 400 | landscape
   6. Tight abstract of stacked landings from the side, a fugue of parallel
-     diagonals fading top to bottom, high contrast, minimal | same block,
-     Chicago | Leica M6, Kodak Tri-X 400 | square
+     diagonals fading top to bottom, rust and teal paint against concrete,
+     minimal | same block, Chicago | Leica M6, Kodak Portra 400 | square
 
 ---
 
@@ -215,39 +219,43 @@ traces — laundry, satellite dishes, a single lit window.*
   it. Two hundred identical balconies, and on one of them a line of washing
   flags in the wind — the single human hand that breaks the architect's
   arithmetic.
-- **Image grade:** Monochrome with the faintest warmth, even daylight, grid
+- **Image grade:** Soft natural color, even overcast daylight, muted concrete
+  greys and beiges warmed by the bright colors of the hanging washing; grid
   geometry sharp, one soft moving element.
 - **Image set description:** A balcony-grid facade filling the frame; one
   balcony carries hanging laundry that interrupts the repetition. Supporting
   frames isolate the washing against the concrete.
 - **Image gallery:**
   1. The entire balcony-grid facade, hundreds of identical concrete loggias in
-     perfect array, warm-tinged greys, faint pebbled render, shot straight-on to
-     fill the frame | Park Hill Estate, Sheffield | Rolleiflex 3.5F, Ilford FP4
-     Plus | square
+     perfect array, warm beige and grey render tinged with faded paint, shot
+     straight-on to fill the frame | Park Hill Estate, Sheffield | Rolleiflex
+     3.5F, Kodak Portra 400 | square
   2. The grid pulled in to a block of a dozen balconies, one strung with a line
-     of pale washing sagging in the breeze — the single break in the pattern,
-     soft daylight | Park Hill Estate, Sheffield | Rolleiflex 3.5F, Ilford FP4
-     Plus | square
-  3. The laundry balcony isolated, shirts and sheets glowing softly against the
-     dark recess behind, gentle motion blur in the fabric, matte concrete frame
-     | Park Hill Estate, Sheffield | Rolleiflex 3.5F, Ilford FP4 Plus | portrait
-  4. Detail of a single sheet on the line, its soft folds and light-warm white
-     against coarse grey render, shallow oblique view | Park Hill Estate,
-     Sheffield | Rolleiflex 3.5F, Ilford FP4 Plus | landscape
+     of bright washing — red, yellow and blue clothes sagging in the breeze, the
+     single break in the pattern, soft daylight | Park Hill Estate, Sheffield |
+     Rolleiflex 3.5F, Kodak Portra 400 | square
+  3. The laundry balcony isolated, colorful shirts and pastel sheets glowing
+     softly against the dark recess behind, gentle motion blur in the fabric,
+     matte concrete frame | Park Hill Estate, Sheffield | Rolleiflex 3.5F, Kodak
+     Portra 400 | portrait
+  4. Detail of a single sky-blue sheet on the line, its soft folds against
+     coarse warm-grey render, shallow oblique view | Park Hill Estate,
+     Sheffield | Rolleiflex 3.5F, Kodak Portra 400 | landscape
   5. A wide flank of the estate receding at a slight angle, the endless grid
-     marching to a vanishing point, one distant flash of washing, level daylight
-     | Park Hill Estate, Sheffield | Rolleiflex 3.5F, Ilford FP4 Plus | landscape
+     marching to a vanishing point, one distant flash of colored washing, level
+     daylight | Park Hill Estate, Sheffield | Rolleiflex 3.5F, Kodak Portra 400 |
+     landscape
   6. Ground-level look up the facade, balconies foreshortening into a dense
-     lattice overhead, pale grey, one drying rack tilted against the order |
-     Park Hill Estate, Sheffield | Rolleiflex 3.5F, Ilford FP4 Plus | portrait
+     lattice overhead, muted grey-beige concrete, one drying rack of bright
+     towels tilted against the order | Park Hill Estate, Sheffield | Rolleiflex
+     3.5F, Kodak Portra 400 | portrait
 
 ### 7. Three Hundred Windows, One Light On
 - **Text paragraph:** At dusk the tower turns into a spreadsheet of dark cells.
   Then, near the top, one window glows — someone home, someone awake — and the
   whole anonymous slab suddenly has an address.
-- **Image grade:** Blue-hour near-monochrome, cool shadows, one warm lit
-  window as the only color/light accent.
+- **Image grade:** Blue-hour color, deep slate-blue twilight tones, cool
+  shadows, one warm amber lit window as the single glowing accent.
 - **Image set description:** A tower block at dusk, hundreds of dark windows in
   a grid, exactly one illuminated; a tighter frame confirming the single lit
   cell.
@@ -421,29 +429,30 @@ glowing lobbies in the dark mass.*
 - **Text paragraph:** After midnight the building goes black except for one
   warm rectangle at street level — the lobby, lit for no one, glowing inside
   the dark concrete mass like a coal that won't go out.
-- **Image grade:** Long-exposure night, near-monochrome dark massing with a
-  single warm-lit interior; smooth blacks, controlled highlights.
+- **Image grade:** Long-exposure night color, deep teal-blue dark massing
+  warmed by a single amber-lit interior; the tungsten glow against the cool
+  night the whole picture; smooth shadows, controlled highlights.
 - **Image set description:** Brutalist buildings at night, mostly in shadow,
   with a glowing ground-floor lobby or floodlit panel; long-exposure smoothness,
   empty plaza foreground.
 - **Image gallery:**
-  1. The whole dark building mass at night, its bulk barely readable against a
-     black sky, a single warm-lit glass lobby glowing at street level, smooth
-     long-exposure blacks, straight-on | Met Breuer, New York | Sony A7 (long
-     exposure), digital toned near-mono | portrait
-  2. The lobby pulled closer, warm interior light spilling out onto wet
-     pavement, the concrete overhang above swallowed in shadow, reflections
-     smeared by the long exposure | Met Breuer, New York | Sony A7, digital
-     toned near-mono | landscape
+  1. The whole dark building mass at night, its bulk deep teal-blue against a
+     near-black sky, a single warm amber glass lobby glowing at street level,
+     smooth long-exposure tones, straight-on | Met Breuer, New York | Sony A7
+     (long exposure), night color | portrait
+  2. The lobby pulled closer, warm golden interior light spilling out onto wet
+     blue-grey pavement, the concrete overhang above swallowed in cool shadow,
+     reflections smeared by the long exposure | Met Breuer, New York | Sony A7,
+     night color | landscape
   3. Empty plaza foreground leading to the glowing entrance, long-exposure
-     puddles mirroring the warm light, cold dark concrete framing, low view |
-     Met Breuer, New York | Sony A7, digital toned near-mono | landscape
-  4. A vertical slice of the facade, one lit stairwell glowing amber through
-     slot windows up the dark shaft, smooth black concrete, straight-on |
-     Met Breuer, New York | Sony A7, digital toned near-mono | portrait
-  5. Abstract of the lit doorway alone, a warm rectangle floating in near-total
-     black, soft glow bleeding at its edges, minimal | Met Breuer, New York |
-     Sony A7, digital toned near-mono | square
+     puddles mirroring the warm amber light on cold blue concrete, low view |
+     Met Breuer, New York | Sony A7, night color | landscape
+  4. A vertical slice of the facade, one lit stairwell glowing warm amber
+     through slot windows up the cool dark shaft, smooth teal-toned concrete,
+     straight-on | Met Breuer, New York | Sony A7, night color | portrait
+  5. Abstract of the lit doorway alone, a warm golden rectangle floating in
+     deep blue-black, soft glow bleeding at its edges, minimal | Met Breuer,
+     New York | Sony A7, night color | square
 
 ### 13. Floodlit and Alone
 - **Text paragraph:** The floodlights come on and the plaza empties. Concrete
