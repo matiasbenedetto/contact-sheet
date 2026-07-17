@@ -320,11 +320,12 @@ function clean_title(string $title): string
 function compose_prompt(string $text, string $grade): string
 {
     $parts = array_map('trim', explode('|', $text));
-    $subject = $parts[0] ?? $text;
-    $location = $parts[1] ?? '';
+    $subject = strip_signage_triggers(strip_multiframe($parts[0] ?? $text));
+    $location = city_only($parts[1] ?? '');
     $camera = $parts[2] ?? '';
+    $grade = strip_multiframe($grade);
 
-    $prompt = 'A fine-art photograph. ' . $subject;
+    $prompt = 'A single fine-art photograph. ' . $subject;
     if ($location !== '') {
         $prompt .= '. Location: ' . $location;
     }
@@ -334,7 +335,94 @@ function compose_prompt(string $text, string $grade): string
     if ($grade !== '') {
         $prompt .= '. Overall look: ' . rtrim($grade, '.') . '.';
     }
+    // One single photograph — never a grid/collage/contact-sheet. The post's
+    // "typology / set / series" language (scrubbed above) otherwise pushes the
+    // model to render multiple framed photos in one image.
+    $prompt .= ' This is ONE single photograph: a single continuous frame of one'
+        . ' scene. It is NOT a grid, collage, montage, contact sheet, diptych,'
+        . ' triptych, split-screen or set of panels — do not divide the frame'
+        . ' into multiple images or tiles.';
+    // Text in the frame is STRICTLY forbidden. Named-institution subjects
+    // (library, city hall, theatre, bus station) and real place names pull the
+    // model toward rendering nameplates/signage, so the ban is emphatic and
+    // building-specific: plain, unlettered surfaces everywhere.
+    $prompt .= ' CRITICAL: this image must contain absolutely no text of any'
+        . ' kind — no words, letters, numbers, signage, nameplates, building'
+        . ' names, shop signs, logos, house numbers, watermarks, captions or'
+        . ' writing anywhere in the frame. The building carries no signs and no'
+        . ' lettering; every surface is plain, blank, unmarked concrete.';
     return trim(preg_replace('/\s+/', ' ', $prompt));
+}
+
+/**
+ * Remove phrases that imply multiple images in one frame (typology / contact
+ * sheet / series / "framed identically to read as a series"), so the model
+ * renders a single photo rather than a grid. Leftover punctuation is tidied.
+ */
+function strip_multiframe(string $s): string
+{
+    $patterns = [
+        '/\bso (?:the|they) (?:set|series)[^.,;]*/i',
+        '/\b(?:the|each|every) (?:set|frame|image)[^.,;]*(?:typolog|series|identical|graded identically)[^.,;]*/i',
+        '/\bframed identically[^.,;]*/i',
+        '/\breads? as a (?:typology|series|set)[^.,;]*/i',
+        '/\bas a companion to the monochrome typolog[^.,;]*/i',
+        '/\ba contact sheet of[^.,;]*/i',
+        '/\btypolog\w*/i',
+        '/\bcontact sheet\b/i',
+        '/\bas a series\b/i',
+        '/\bin a series\b/i',
+        '/\bthe series\b/i',
+    ];
+    $s = preg_replace($patterns, '', $s);
+    // Tidy the punctuation the removals leave behind.
+    $s = preg_replace('/\s*;\s*(?=[.,;]|$)/', '', $s);   // dangling "; ." or "; ,"
+    $s = preg_replace('/\s*,\s*(?=[.,;])/', '', $s);      // ", ." -> "."
+    $s = preg_replace('/\s{2,}/', ' ', $s);
+    $s = preg_replace('/\s+([.,;])/', '$1', $s);
+    $s = preg_replace('/([.,;])\1+/', '$1', $s);
+    return trim($s, " ,;");
+}
+
+/**
+ * Genericise named-venue nouns in the subject. A named institution (library,
+ * social club, city hall) makes the model stamp that name over the entrance,
+ * so we relax the noun to a plain concrete building while keeping every
+ * architectural adjective. Belt-and-braces with the CRITICAL no-text directive.
+ */
+function strip_signage_triggers(string $s): string
+{
+    $map = [
+        '/\bsocial-club block\b/i'   => 'single-storey concrete block',
+        '/\bsocial club\b/i'         => 'concrete building',
+        '/\bsocial-club\b/i'         => 'concrete',
+        '/\blibrary face\b/i'        => 'concrete facade',
+        '/\blibrary\b/i'             => 'building',
+        "/\\btheatre's\\b/i"         => "building's",
+        '/\btheatre\b/i'             => 'building',
+        '/\bministry building\b/i'   => 'government office building',
+        '/\bministry buildings\b/i'  => 'government office buildings',
+        '/\bministry\b/i'            => 'government',
+        '/\bcity hall\b/i'           => 'civic building',
+        '/\bbus station\b/i'         => 'transit building',
+        '/\bcathedral\b/i'           => 'concrete structure',
+        '/\buniversity faculty\b/i'  => 'institutional',
+    ];
+    return preg_replace(array_keys($map), array_values($map), $s);
+}
+
+/**
+ * Reduce a "Building Name, City" location to just the city (the last
+ * comma-separated segment). Real named civic buildings are the strongest pull
+ * toward rendered signage; the city alone keeps geographic flavour without it.
+ */
+function city_only(string $location): string
+{
+    if ($location === '') {
+        return '';
+    }
+    $segments = array_map('trim', explode(',', $location));
+    return end($segments) ?: $location;
 }
 
 /** Map the trailing "aspect ratio" field to an Imagen-supported ratio. */
