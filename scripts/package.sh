@@ -45,6 +45,7 @@ rsync -a \
   --exclude 'screenshots' \
   --exclude 'playground' \
   --exclude 'workdir' \
+  --exclude 'demo-site' \
   ./ "$STAGE/"
 
 echo "▶ Zipping…"

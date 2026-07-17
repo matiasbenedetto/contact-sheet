@@ -12,6 +12,7 @@
 /dist
 /playground
 /workdir
+/demo-site
 
 # Block sources (only the compiled build/ is shipped)
 /blocks/photo-strip/src
