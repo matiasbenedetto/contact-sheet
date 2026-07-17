@@ -1,0 +1,122 @@
+[
+    {
+        "num": 1,
+        "title": "Twelve Facades, One Sky",
+        "slug": "twelve-facades-one-sky",
+        "dir": "01-twelve-facades-one-sky",
+        "paragraph": "The sky never changed. Twelve times I stood square to a building, waited for the traffic to clear, and let the same flat grey light fall across a different wall of concrete. Set side by side they stop being buildings and become a family — siblings photographed against the one backdrop that refuses to have a mood.",
+        "image_count": 12
+    },
+    {
+        "num": 2,
+        "title": "The Building That Stares Back",
+        "slug": "the-building-that-stares-back",
+        "dir": "02-the-building-that-stares-back",
+        "paragraph": "Perfect symmetry is unsettling. Stand in front of this one and it seems to notice you — every window matched, every fin doubled, the entrance a mouth held exactly in the middle. I framed it the way it wanted to be framed and stepped back.",
+        "image_count": 5
+    },
+    {
+        "num": 3,
+        "title": "Nine to Five in Béton Brut",
+        "slug": "nine-to-five-in-b-ton-brut",
+        "dir": "03-nine-to-five-in-b-ton-brut",
+        "paragraph": "A government block on a Tuesday morning: nothing happens on the outside, everything is implied within. The concrete is honest about what it is — a filing cabinet the size of a city street, catalogued here in the plainest light I could find.",
+        "image_count": 6
+    },
+    {
+        "num": 4,
+        "title": "Helix in Shadow",
+        "slug": "helix-in-shadow",
+        "dir": "04-helix-in-shadow",
+        "paragraph": "A parking ramp is a staircase that forgot it was for cars. Looking up the core, the spiral tightens into itself, each turn darker than the last, until the top is just a suggestion of daylight swallowed by the coil.",
+        "image_count": 6
+    },
+    {
+        "num": 5,
+        "title": "Fire Escape Fugue",
+        "slug": "fire-escape-fugue",
+        "dir": "05-fire-escape-fugue",
+        "paragraph": "Zigzag, landing, zigzag, landing — a stair is a rhythm bolted to a wall. I waited for the sun to cut it into hard diagonals and shot the repetition until it started to sound like something.",
+        "image_count": 6
+    },
+    {
+        "num": 6,
+        "title": "Laundry Day on the Fourteenth Floor",
+        "slug": "laundry-day-on-the-fourteenth-floor",
+        "dir": "06-laundry-day-on-the-fourteenth-floor",
+        "paragraph": "The grid wants to be perfect and the tenants won't let it. Two hundred identical balconies, and on one of them a line of washing flags in the wind — the single human hand that breaks the architect's arithmetic.",
+        "image_count": 6
+    },
+    {
+        "num": 7,
+        "title": "Three Hundred Windows, One Light On",
+        "slug": "three-hundred-windows-one-light-on",
+        "dir": "07-three-hundred-windows-one-light-on",
+        "paragraph": "At dusk the tower turns into a spreadsheet of dark cells. Then, near the top, one window glows — someone home, someone awake — and the whole anonymous slab suddenly has an address.",
+        "image_count": 6
+    },
+    {
+        "num": 8,
+        "title": "The Grain of the Formwork",
+        "slug": "the-grain-of-the-formwork",
+        "dir": "08-the-grain-of-the-formwork",
+        "paragraph": "Before it was concrete it was wood. The planks that shaped the pour left their grain pressed into the surface — a fossil of the mould, timber remembered in stone. Up close the wall stops being a wall.",
+        "image_count": 8
+    },
+    {
+        "num": 9,
+        "title": "Where the Water Ran",
+        "slug": "where-the-water-ran",
+        "dir": "09-where-the-water-ran",
+        "paragraph": "Rain writes on concrete. Years of it, running the same paths down the same face, leave stains that no architect drew — dark rivers of weathering that turn a flat panel into a map of its own history.",
+        "image_count": 6
+    },
+    {
+        "num": 10,
+        "title": "Vertigo, Upward",
+        "slug": "vertigo-upward",
+        "dir": "10-vertigo-upward",
+        "paragraph": "Lie on your back at the base of a tower and the walls fall inward. Parallel lines, told they should meet, obey — rushing up toward a point in a sky wiped clean of everything but light.",
+        "image_count": 7
+    },
+    {
+        "num": 11,
+        "title": "The Sky Is a Triangle",
+        "slug": "the-sky-is-a-triangle",
+        "dir": "11-the-sky-is-a-triangle",
+        "paragraph": "Between two buildings, the sky gets rationed. Stand in the gap, look up, and what's left of the heavens is a hard-edged sliver — a geometric offcut the architecture forgot to claim.",
+        "image_count": 6
+    },
+    {
+        "num": 12,
+        "title": "Lobby Light at 2 A.M.",
+        "slug": "lobby-light-at-2-a-m",
+        "dir": "12-lobby-light-at-2-a-m",
+        "paragraph": "After midnight the building goes black except for one warm rectangle at street level — the lobby, lit for no one, glowing inside the dark concrete mass like a coal that won't go out.",
+        "image_count": 5
+    },
+    {
+        "num": 13,
+        "title": "Floodlit and Alone",
+        "slug": "floodlit-and-alone",
+        "dir": "13-floodlit-and-alone",
+        "paragraph": "The floodlights come on and the plaza empties. Concrete that looked heavy by day turns theatrical at night — a stage set with no actors, lit hard from below, holding its pose for the long exposure.",
+        "image_count": 5
+    },
+    {
+        "num": 14,
+        "title": "A Pastel Shelter on the Steppe",
+        "slug": "a-pastel-shelter-on-the-steppe",
+        "dir": "14-a-pastel-shelter-on-the-steppe",
+        "paragraph": "Out where the road runs straight to the horizon, someone once poured a small monument to waiting. Faded mint and dusty coral against a grey sky — a concrete bus stop still standing for a bus that comes twice a day, if at all.",
+        "image_count": 6
+    },
+    {
+        "num": 15,
+        "title": "Twelve Bus Stops on the Old Highway",
+        "slug": "twelve-bus-stops-on-the-old-highway",
+        "dir": "15-twelve-bus-stops-on-the-old-highway",
+        "paragraph": "No two are alike. Whoever built these was bored of the brief and turned every shelter into a small argument — a wing, a wave, a concrete flower — scattered along a highway that has mostly forgotten them.",
+        "image_count": 10
+    }
+]
