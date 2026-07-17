@@ -3,8 +3,11 @@
  * seed-posts.php — create the demo blog posts on the server. Run with WP-CLI so
  * WordPress is fully loaded:
  *
- *   wp eval-file seed-posts.php <seed-posts.json> <images-base-dir> [--force] \
+ *   wp eval-file seed-posts.php <seed-posts.json> <images-base-dir> [force] \
  *     --path=/var/www/html/contactsheetdemo.mebenedetto.com
+ *
+ * Pass the literal word `force` as the third positional arg to update posts
+ * that already exist (a leading `--force` would be swallowed by WP-CLI itself).
  *
  * For each post in the JSON it imports that post's images (in filename order)
  * into the media library, then creates a published post whose content is the
@@ -18,7 +21,7 @@
 $args = $args ?? [];
 $jsonPath = $args[0] ?? null;
 $imgBase  = isset($args[1]) ? rtrim($args[1], '/') : null;
-$force    = in_array('--force', $args, true);
+$force    = in_array('force', $args, true) || in_array('--force', $args, true);
 
 if ($jsonPath === null || $imgBase === null) {
     WP_CLI::error('Usage: wp eval-file seed-posts.php <json> <images-dir> [--force]');
@@ -43,39 +46,44 @@ foreach ($posts as $p) {
         continue;
     }
 
-    // Import this post's images, in filename order.
-    $dir = $imgBase . '/' . $p['dir'];
-    $files = glob($dir . '/*.jpg') ?: [];
-    sort($files);
-    if ($files === []) {
-        WP_CLI::warning("no images found for {$slug} in {$dir}");
-    }
-
+    // Collect the image attachment IDs. On a fresh post we import the files; on
+    // a --force update we reuse the IDs already referenced in the post (so we
+    // don't create duplicate attachments), falling back to import if none.
     $ids = [];
-    foreach ($files as $f) {
-        $out = WP_CLI::runcommand(
-            'media import ' . escapeshellarg($f) . ' --porcelain --title=' . escapeshellarg($title),
-            ['return' => true, 'launch' => false, 'exit_error' => false]
-        );
-        $id = (int) trim((string) $out);
-        if ($id > 0) {
-            $ids[] = $id;
-        } else {
-            WP_CLI::warning("import failed: {$f}");
+    if ($existing) {
+        preg_match_all('/wp:image\s*\{"id":(\d+)/', $existing->post_content, $mm);
+        $ids = array_map('intval', $mm[1]);
+    }
+    if ($ids === []) {
+        $dir = $imgBase . '/' . $p['dir'];
+        $files = glob($dir . '/*.jpg') ?: [];
+        sort($files);
+        if ($files === []) {
+            WP_CLI::warning("no images found for {$slug} in {$dir}");
+        }
+        foreach ($files as $f) {
+            $out = WP_CLI::runcommand(
+                'media import ' . escapeshellarg($f) . ' --porcelain --title=' . escapeshellarg($title),
+                ['return' => true, 'launch' => false, 'exit_error' => false]
+            );
+            $id = (int) trim((string) $out);
+            if ($id > 0) {
+                $ids[] = $id;
+            } else {
+                WP_CLI::warning("import failed: {$f}");
+            }
         }
     }
 
-    // Build block content: paragraph, then a gallery of the imported images.
-    $content  = "<!-- wp:paragraph -->\n<p>" . esc_html($p['paragraph']) . "</p>\n<!-- /wp:paragraph -->\n\n";
-    $content .= "<!-- wp:gallery {\"columns\":3,\"linkTo\":\"none\"} -->\n"
-        . "<figure class=\"wp-block-gallery has-nested-images columns-3 is-cropped\">\n";
+    // Build block content: the paragraph, then one image block per photo,
+    // stacked one after another (no gallery wrapper).
+    $content = "<!-- wp:paragraph -->\n<p>" . esc_html($p['paragraph']) . "</p>\n<!-- /wp:paragraph -->\n";
     foreach ($ids as $id) {
         $url = esc_url(wp_get_attachment_url($id));
-        $content .= "<!-- wp:image {\"id\":{$id},\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n"
+        $content .= "\n<!-- wp:image {\"id\":{$id},\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n"
             . "<figure class=\"wp-block-image size-large\"><img src=\"{$url}\" alt=\"\" class=\"wp-image-{$id}\"/></figure>\n"
             . "<!-- /wp:image -->\n";
     }
-    $content .= "</figure>\n<!-- /wp:gallery -->\n";
 
     $when = date('Y-m-d H:i:s', $base - ((int) $p['num']) * DAY_IN_SECONDS);
     $postarr = [
