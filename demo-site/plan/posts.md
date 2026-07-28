@@ -35,9 +35,9 @@ sculpture marooned in remote landscapes, some tended, some forgotten.*
   contrast; weathered grey concrete, green hillsides and open skies; evenly
   exposed across the whole frame with no vignette and no dark edge falloff; each
   monument centered against landscape.
-- **Image set description:** Ten abstract concrete war memorials, each shot from
-  a low, centered, frontal vantage against sky and hills — a color survey of
-  futurist monuments.
+- **Image set description:** Ten monumental war memorials — abstract Yugoslav
+  spomeniks alongside heroic Soviet WWII victory monuments — each shot from a
+  low, centered, frontal vantage against sky and landscape; a color survey.
 - **Image gallery:**
   1. A vast concrete flower of curved petals rising from a green hilltop,
      weathered grey concrete warmed by ochre lichen against a soft blue sky with
@@ -49,24 +49,28 @@ sculpture marooned in remote landscapes, some tended, some forgotten.*
   3. A cluster of tall fractured concrete pylons like broken teeth on a bare
      ridge, rough board-marked texture, green grass, a pale cloudy sky behind,
      centered | Kadinjača, Serbia | Pentax 67, Kodak Portra 400 | landscape
-  4. A giant clenched fist-form of ribbed concrete on a plinth, monolithic and
-     scarred, warm even daylight across the ribs, straight-on | Kosmaj, Serbia |
-     Pentax 67, Kodak Portra 400 | portrait
-  5. A ring of white-stone abstract wings encircling an empty plaza, soft shadows
-     across the pale paving, slightly elevated frontal | Jasenovac, Croatia |
-     Pentax 67, Kodak Portra 400 | landscape
-  6. A star-shaped concrete crown of intersecting blades on a hill, pale grey
-     concrete against a clear blue sky, crisp edges, centered low angle | Niš,
-     Serbia | Pentax 67, Kodak Portra 400 | square
+  4. A colossal stone female figure striding forward with a raised sword, flowing
+     drapery and an outstretched arm, pale stone warmed by daylight against a soft
+     blue sky, low heroic angle | Volgograd, Russia | Pentax 67, Kodak Portra 400
+     | portrait
+  5. A giant bronze-toned soldier statue on a stepped stone plinth, cradling a
+     small child and resting a great lowered sword, weathered green-bronze against
+     a pale sky, low frontal view | Treptower Park, Berlin | Pentax 67, Kodak
+     Portra 400 | portrait
+  6. A monumental soldier's head and shoulders carved from a vast block of grey
+     stone, stern and rough-hewn, emerging from a massive concrete wall, warm
+     daylight, low angle | Brest Fortress, Belarus | Pentax 67, Kodak Portra 400 |
+     square
   7. Two smooth concrete horns curving up from a grassy mound, pale and evenly
      lit under soft cloud, minimal, dead-center | Grmeč (Korčanica), Bosnia |
      Pentax 67, Kodak Portra 400 | landscape
-  8. A towering fin of stacked concrete slabs, streaked with rain trails, rising
-     against a bright overcast sky, steep low frontal | Ilirska Bistrica,
-     Slovenia | Pentax 67, Kodak Portra 400 | portrait
-  9. A monumental abstract concrete blossom split into segments, moss creeping
-     up its base, a soft grey-blue sky over a green hillside, centered | Petrova
-     Gora, Croatia | Pentax 67, Kodak Portra 400 | landscape
+  8. A cluster of three colossal angular concrete bayonet-shaped stelae rising
+     together into the sky, pale grey converging spikes, thin clouds behind, steep
+     low angle | Victory Park, Moscow | Pentax 67, Kodak Portra 400 | portrait
+  9. A towering victory obelisk crowned with a five-pointed star, a tall tapering
+     stone column on a broad plaza with an eternal-flame plinth at its base, warm
+     stone against a soft grey-blue sky, centered | Victory Square, Minsk | Pentax
+     67, Kodak Portra 400 | landscape
   10. A final distant monument tiny on a vast empty ridge, a pale sculptural
       mark under a wide soft sky, the survey's quiet closing note | Makljen,
       Bosnia | Pentax 67, Kodak Portra 400 | landscape
