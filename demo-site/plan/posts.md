@@ -477,7 +477,8 @@ memorials, structures built to look like the future itself.*
 - **Image grade:** Clean natural color, bright sky, pale grey ribbed concrete
   with cool shadows, a faint retro-futurist optimism; crisp.
 - **Image set description:** A saucer-shaped modernist institute still standing —
-  the ribbed disc from below and side, its cylinder base and approach.
+  the ribbed disc from below and side, its cylinder base and approach, and
+  monumental views of the structure towering over the crowds it was built for.
 - **Image gallery:**
   1. The full ribbed concrete saucer balanced on its cylinder against a bright
      blue sky, pale grey radial fins, low centered view | Kyiv, Ukraine | Kiev 60,
@@ -490,9 +491,20 @@ memorials, structures built to look like the future itself.*
   4. The cylindrical base with its narrow ribbon windows, a figure entering,
      pale concrete warmed by sun, straight-on | Kyiv, Ukraine | Kiev 60, Kodak
      Portra 400 | portrait
-  5. The saucer seen over surrounding rooftops, floating above the ordinary
-     city, blue sky, distant level view | Kyiv, Ukraine | Kiev 60, Kodak Portra
-     400 | landscape
+  5. The whole saucer institute towering over a broad public plaza thronged with
+     people, the great ribbed disc firmly on its cylinder base dwarfing the crowd
+     below, monumental scale, low wide view | Kyiv, Ukraine | Kiev 60, Kodak
+     Portra 400 | landscape
+  6. A heroic low upward angle of the whole structure, tiny figures at the foot
+     of its massive columns for scale, the great disc rising against a bright
+     sky, monumental | Kyiv, Ukraine | Kiev 60, Kodak Portra 400 | portrait
+  7. Crowds ascending the grand entrance steps toward the building, a river of
+     people flowing up beneath the massive cantilevered disc, monumental civic
+     scale, straight-on | Kyiv, Ukraine | Kiev 60, Kodak Portra 400 | landscape
+  8. A monumental concrete relief of striding workers and citizens across the
+     building's plinth wall, heroic abstract figures marching forward (no
+     lettering), the people power of Soviet monumentalism, low frontal | Kyiv,
+     Ukraine | Kiev 60, Kodak Portra 400 | landscape
 
 ### 15. Monuments to Gagarin's Sky
 - **Text paragraph:** They built the future in titanium and concrete and pointed
