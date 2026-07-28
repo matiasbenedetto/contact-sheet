@@ -2,6 +2,10 @@
 # Everything listed here is dev-only; the built `blocks/photo-strip/build/`
 # directory is committed and IS shipped.
 
+# Secrets / environment (never ship)
+.env
+.env.*
+
 # Dev tooling / VCS
 /.git
 /.github

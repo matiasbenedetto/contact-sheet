@@ -26,6 +26,8 @@ rsync -a \
   --exclude '.github' \
   --exclude '.claude' \
   --exclude '.codex' \
+  --exclude '.env' \
+  --exclude '.env.*' \
   --exclude 'node_modules' \
   --exclude 'dist' \
   --exclude 'scripts' \
