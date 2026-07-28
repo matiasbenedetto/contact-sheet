@@ -31,44 +31,45 @@ sculpture marooned in remote landscapes, some tended, some forgotten.*
   hills and battlefields, each a different idea of how concrete might hold
   grief and hope at once. Photographed the same way every time, they become a
   constellation: stars poured in cement, still burning on their empty ridges.
-- **Image grade:** Dramatic high-contrast monochrome, brooding skies, deep
-  blacks and silver concrete; each monument centered against landscape so the
-  set reads as a survey of sculptural silhouettes.
+- **Image grade:** Natural color, soft even daylight, balanced true-to-life
+  contrast; weathered grey concrete, green hillsides and open skies; evenly
+  exposed across the whole frame with no vignette and no dark edge falloff; each
+  monument centered against landscape.
 - **Image set description:** Ten abstract concrete war memorials, each shot from
-  a low, centered, frontal vantage against sky and hills — a monochrome
-  typology of futurist monuments.
+  a low, centered, frontal vantage against sky and hills — a color survey of
+  futurist monuments.
 - **Image gallery:**
   1. A vast concrete flower of curved petals rising from a green hilltop,
-     silver-grey against a stormy sky, weather-streaked ribs, shot low and
-     centered so it fills the frame | Podgarić, Croatia | Kiev 88, Ilford HP5
-     Plus | landscape
-  2. A pair of soaring angular concrete wings splitting the sky, sharp edges
-     catching hard light, deep shadow between them, low frontal view | Sutjeska
-     (Tjentište), Bosnia | Kiev 88, Ilford HP5 Plus | portrait
+     weathered grey concrete warmed by ochre lichen against a soft blue sky with
+     drifting clouds, weather-streaked ribs, shot low and centered so it fills
+     the frame | Podgarić, Croatia | Pentax 67, Kodak Portra 400 | landscape
+  2. A pair of soaring angular concrete wings splitting the sky, pale grey
+     concrete against a bright hazy sky, gentle shadow between them, low frontal
+     view | Sutjeska (Tjentište), Bosnia | Pentax 67, Kodak Portra 400 | portrait
   3. A cluster of tall fractured concrete pylons like broken teeth on a bare
-     ridge, rough board-marked texture, dark clouds behind, centered | Kadinjača,
-     Serbia | Kiev 88, Ilford HP5 Plus | landscape
+     ridge, rough board-marked texture, green grass, a pale cloudy sky behind,
+     centered | Kadinjača, Serbia | Pentax 67, Kodak Portra 400 | landscape
   4. A giant clenched fist-form of ribbed concrete on a plinth, monolithic and
-     scarred, low sun raking the ribs, straight-on | Kosmaj, Serbia | Kiev 88,
-     Ilford HP5 Plus | portrait
-  5. A ring of white-stone abstract wings encircling an empty plaza, hard
-     geometric shadows across the ground, slightly elevated frontal | Jasenovac,
-     Croatia | Kiev 88, Ilford HP5 Plus | landscape
-  6. A star-shaped concrete crown of intersecting blades on a hill, silver
-     against near-black sky, crisp edges, centered low angle | Niš, Serbia |
-     Kiev 88, Ilford HP5 Plus | square
-  7. Two smooth concrete horns curving up from a grassy mound, pale and
-     shadowless under flat cloud, minimal, dead-center | Grmeč (Korčanica),
-     Bosnia | Kiev 88, Ilford HP5 Plus | landscape
-  8. A towering fin of stacked concrete slabs, streaked with dark rain trails,
-     looming over the viewer, steep low frontal | Ilirska Bistrica, Slovenia |
-     Kiev 88, Ilford HP5 Plus | portrait
+     scarred, warm even daylight across the ribs, straight-on | Kosmaj, Serbia |
+     Pentax 67, Kodak Portra 400 | portrait
+  5. A ring of white-stone abstract wings encircling an empty plaza, soft shadows
+     across the pale paving, slightly elevated frontal | Jasenovac, Croatia |
+     Pentax 67, Kodak Portra 400 | landscape
+  6. A star-shaped concrete crown of intersecting blades on a hill, pale grey
+     concrete against a clear blue sky, crisp edges, centered low angle | Niš,
+     Serbia | Pentax 67, Kodak Portra 400 | square
+  7. Two smooth concrete horns curving up from a grassy mound, pale and evenly
+     lit under soft cloud, minimal, dead-center | Grmeč (Korčanica), Bosnia |
+     Pentax 67, Kodak Portra 400 | landscape
+  8. A towering fin of stacked concrete slabs, streaked with rain trails, rising
+     against a bright overcast sky, steep low frontal | Ilirska Bistrica,
+     Slovenia | Pentax 67, Kodak Portra 400 | portrait
   9. A monumental abstract concrete blossom split into segments, moss creeping
-     up its base, brooding sky, centered | Petrova Gora, Croatia | Kiev 88,
-     Ilford HP5 Plus | landscape
+     up its base, a soft grey-blue sky over a green hillside, centered | Petrova
+     Gora, Croatia | Pentax 67, Kodak Portra 400 | landscape
   10. A final distant monument tiny on a vast empty ridge, a pale sculptural
-      mark under an enormous dark sky, the survey's quiet closing note | Makljen,
-      Bosnia | Kiev 88, Ilford HP5 Plus | landscape
+      mark under a wide soft sky, the survey's quiet closing note | Makljen,
+      Bosnia | Pentax 67, Kodak Portra 400 | landscape
 
 ### 2. The Flower That Outlived the Republic
 - **Text paragraph:** The country that built it no longer exists, but the
