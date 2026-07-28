@@ -283,21 +283,31 @@ taking guests, some slowly reclaimed by ferns.*
      dome, green daylight pouring in, pale peeling plaster and fern-green floor,
      symmetrical wide view | Tskaltubo, Georgia | Pentax 67, Kodak Portra 400 |
      landscape
-  2. Ferns and saplings growing from a cracked terrazzo floor, soft green light,
-     faded pink walls behind, low eye-level | Tskaltubo, Georgia | Pentax 67,
-     Kodak Portra 400 | portrait
-  3. A colonnade of peeling columns receding into green shadow, dappled light,
+  2. A colonnade of peeling columns receding into green shadow, dappled light,
      muted ochre and moss tones, one-point perspective | Tskaltubo, Georgia |
      Pentax 67, Kodak Portra 400 | landscape
-  4. An empty circular plunge pool full of leaves and rainwater, faded turquoise
+  3. An empty circular plunge pool full of leaves and rainwater, faded turquoise
      tiles, a shaft of light across it, high angle | Tskaltubo, Georgia | Pentax
      67, Kodak Portra 400 | square
-  5. A doorway framing a bright overgrown courtyard beyond, dark ruined interior
-     to bright green outside, straight-on | Tskaltubo, Georgia | Pentax 67, Kodak
+  4. The monumental main facade of the abandoned bathhouse seen whole, a long
+     symmetrical colonnade of tall columns under a grand pediment, pale plaster
+     streaked green, an overgrown forecourt of shrubs, straight-on | Tskaltubo,
+     Georgia | Pentax 67, Kodak Portra 400 | landscape
+  5. A vast domed central hall seen from the floor, a great coffered concrete dome
+     with a broken oculus spilling green daylight into the monumental circular
+     space, ferns below, wide upward view | Tskaltubo, Georgia | Pentax 67, Kodak
      Portra 400 | portrait
-  6. A curved concrete balcony inside the atrium, vines spilling over its rail,
-     soft light, pale grey and green, oblique | Tskaltubo, Georgia | Pentax 67,
-     Kodak Portra 400 | landscape
+  6. A cavernous empty bathing hall lined with rows of monumental columns receding
+     into green gloom, cracked terrazzo floor, soft shafts of light, one-point
+     perspective | Tskaltubo, Georgia | Pentax 67, Kodak Portra 400 | landscape
+  7. A sweeping grand double staircase rising to an upper colonnade, monumental
+     peeling balustrades pale against green shadow, vines spilling down,
+     symmetrical low view | Tskaltubo, Georgia | Pentax 67, Kodak Portra 400 |
+     portrait
+  8. The monumental cylindrical rotunda of a spa pavilion among tall trees, a ring
+     of slender columns under a broad flat concrete roof, faded ochre and moss
+     green, low three-quarter view | Tskaltubo, Georgia | Pentax 67, Kodak Portra
+     400 | landscape
 
 ---
 
