@@ -6,7 +6,8 @@ in a horizontal scrolling strip — like a photographer's proof sheet — using 
 bundled Photo Strip block. Single posts drop the strip and show the images full
 width, with diffuse drop shadows so they read like printed photographs.
 
-Live demo: **[mebenedetto.com](https://mebenedetto.com)** (running this theme).
+Live demo: **[contactsheetdemo.mebenedetto.com](https://contactsheetdemo.mebenedetto.com/)**.
+Also running in the wild at **[mebenedetto.com](https://mebenedetto.com)**.
 
 ![Home page](screenshots/home.png)
 
