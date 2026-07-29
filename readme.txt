@@ -26,6 +26,10 @@ The theme ships with a custom Photo Strip block, which powers the home, archive,
 * Block settings let you adjust the strip height, frame aspect ratio, and corner radius.
 * It reads the post from the surrounding Query Loop, so you can drop it into your own templates and patterns anywhere a post context exists.
 
+= Demo content =
+
+The demo site's full content (photo posts, pages, and images) is available as a WordPress export file you can import into your own site: download it from https://raw.githubusercontent.com/matiasbenedetto/contact-sheet/trunk/demo-site/contact-sheet-demo.xml, then go to Tools > Import > WordPress in your admin panel, upload the file, and check "Download and import file attachments".
+
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.

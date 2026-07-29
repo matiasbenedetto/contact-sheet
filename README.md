@@ -66,6 +66,34 @@ top of the default. Switch between them in **Appearance → Editor → Styles**.
 To build a production zip from source: `npm install && npm run package` →
 `contact-sheet.zip`.
 
+## Demo content
+
+Want your site to start out looking like the
+[demo](https://contactsheetdemo.mebenedetto.com/)? The demo site's full content
+— 15 photo-essay posts, the About page, and all of their images — ships as a
+standard WordPress export file:
+[`demo-site/contact-sheet-demo.xml`](demo-site/contact-sheet-demo.xml).
+
+To import it into your site:
+
+1. Install and activate the Contact Sheet theme.
+2. Download
+   [`contact-sheet-demo.xml`](https://raw.githubusercontent.com/matiasbenedetto/contact-sheet/trunk/demo-site/contact-sheet-demo.xml).
+3. In your admin panel, go to **Tools → Import**, install the **WordPress**
+   importer, and run it.
+4. Upload the file, assign the posts to a user, and check **Download and import
+   file attachments** so the photos are copied into your media library.
+
+Or with WP-CLI:
+
+```bash
+wp plugin install wordpress-importer --activate
+wp import contact-sheet-demo.xml --authors=create
+```
+
+The importer downloads the images from the live demo site, so the machine
+running the import needs internet access.
+
 ## Development
 
 The fastest way to develop the theme locally is the **Playground harness** in
