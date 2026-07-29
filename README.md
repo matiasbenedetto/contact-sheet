@@ -6,6 +6,8 @@ in a horizontal scrolling strip — like a photographer's proof sheet — using 
 bundled Photo Strip block. Single posts drop the strip and show the images full
 width, with diffuse drop shadows so they read like printed photographs.
 
+Donwload it from WordPress theme directory: [wordpress.org/themes/contact-sheet/](https://wordpress.org/themes/contact-sheet/)
+
 Live demo: **[contactsheetdemo.mebenedetto.com](https://contactsheetdemo.mebenedetto.com/)**.
 Also running in the wild at **[mebenedetto.com](https://mebenedetto.com)**.
 
