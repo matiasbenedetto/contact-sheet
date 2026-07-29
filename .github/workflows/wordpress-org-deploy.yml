@@ -13,17 +13,19 @@ name: Deploy to WordPress.org
 #       SVN_PASSWORD  → your WordPress.org account password
 #
 # 3. Each release needs a UNIQUE version. Bump `Version:` in style.css, then
-#    tag the commit with the matching version prefixed by `v`, e.g.:
+#    tag the commit with the matching version — bare ("1.0.1", what
+#    scripts/release.sh creates) or v-prefixed ("v1.0.1"):
 #       style.css  →  Version: 1.0.1
-#       git tag v1.0.1 && git push --tags
-#    The SVN version folder is derived from style.css (the `v` is stripped),
-#    so the tag and header stay in sync.
+#       git tag 1.0.1 && git push --tags
+#    The SVN version folder is derived from style.css (any `v` is stripped
+#    from the tag when comparing), so the tag and header stay in sync.
 # ─────────────────────────────────────────────────────────────────────────────
 
 on:
   push:
     tags:
-      - 'v*'
+      - 'v[0-9]*'
+      - '[0-9]*.[0-9]*.[0-9]*'
   workflow_dispatch:
 
 jobs:
