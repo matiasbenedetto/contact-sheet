@@ -61,6 +61,11 @@ jobs:
           npm ci
           npm run build
 
+      # ubuntu-latest (24.04) runner images no longer ship Subversion, which
+      # the deploy action shells out to.
+      - name: Install Subversion
+        run: sudo apt-get update && sudo apt-get install -y subversion
+
       - name: Deploy to WordPress.org themes SVN
         # Pinned to Codeinwp/action-wordpress-theme-deploy v1.0
         uses: Codeinwp/action-wordpress-theme-deploy@a4595f072f3ff78318cfa43838ce85ac25507378
