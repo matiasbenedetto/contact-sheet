@@ -12,9 +12,19 @@ A minimal photography blog theme that presents each post's images as a film-styl
 
 == Description ==
 
-Contact Sheet is a minimal block theme for photographers and photo bloggers. On the home page, each post's images are rendered in a horizontal scrolling strip — like a photographer's proof sheet — using the bundled Photo Strip block. Single posts keep the focus on your photos with a clean, distraction-free layout.
+Contact Sheet is a minimal block theme for photographers and photo bloggers. On the home page, each post's images are rendered in a horizontal scrolling strip — like a photographer's proof sheet — using the bundled Photo Strip block. Single posts keep the focus on your photos with a clean, distraction-free layout, complete with comments and previous/next post navigation. A two-color palette with light and dark style variations keeps the frame neutral so the photographs do the talking.
 
 Live demo: https://contactsheetdemo.mebenedetto.com/
+
+= The Photo Strip block =
+
+The theme ships with a custom Photo Strip block, which powers the home, archive, and search views:
+
+* It automatically collects every image from a post's content — no galleries to configure and no featured image required. Just write a post and add photos; the strip builds itself.
+* Images are laid out in a single horizontal, scrollable strip of frames, like a strip of film on a contact sheet, and every frame links to the post.
+* Posts without images render a neutral placeholder frame, so mixed photo/text blogs keep a consistent layout.
+* Block settings let you adjust the strip height, frame aspect ratio, and corner radius.
+* It reads the post from the surrounding Query Loop, so you can drop it into your own templates and patterns anywhere a post context exists.
 
 == Installation ==
 
@@ -26,6 +36,7 @@ Live demo: https://contactsheetdemo.mebenedetto.com/
 
 = 1.2.5 =
 * New theme screenshot and color-variation previews, captured from the demo site (contactsheetdemo.mebenedetto.com)
+* Expanded theme description: live demo link and an explanation of the Photo Strip block
 
 = 1.2.4 =
 * Expose only the first photo-strip link to keyboard and AT users
