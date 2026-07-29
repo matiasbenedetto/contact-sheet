@@ -14,6 +14,8 @@ A minimal photography blog theme that presents each post's images as a film-styl
 
 Contact Sheet is a minimal block theme for photographers and photo bloggers. On the home page, each post's images are rendered in a horizontal scrolling strip — like a photographer's proof sheet — using the bundled Photo Strip block. Single posts keep the focus on your photos with a clean, distraction-free layout.
 
+Live demo: https://contactsheetdemo.mebenedetto.com/
+
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
