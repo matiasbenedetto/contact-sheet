@@ -3,7 +3,7 @@ Contributors: mmattiiaass
 Requires at least: 6.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, photography, one-column, custom-logo, block-patterns, block-styles, full-site-editing, translation-ready
@@ -37,6 +37,9 @@ The demo site's full content (photo posts, pages, and images) is available as a 
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.2.6 =
+* Add demo-site content as a WordPress export (WXR) with import docs
 
 = 1.2.5 =
 * New theme screenshot and color-variation previews, captured from the demo site (contactsheetdemo.mebenedetto.com)
