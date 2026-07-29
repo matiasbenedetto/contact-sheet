@@ -26,6 +26,8 @@ rsync -a \
   --exclude '.github' \
   --exclude '.claude' \
   --exclude '.codex' \
+  --exclude '.env' \
+  --exclude '.env.*' \
   --exclude 'node_modules' \
   --exclude 'dist' \
   --exclude 'scripts' \
@@ -45,6 +47,7 @@ rsync -a \
   --exclude 'screenshots' \
   --exclude 'playground' \
   --exclude 'workdir' \
+  --exclude 'demo-site' \
   ./ "$STAGE/"
 
 echo "▶ Zipping…"
