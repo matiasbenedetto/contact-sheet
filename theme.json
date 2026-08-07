@@ -88,6 +88,14 @@
 			"background": "var(--wp--preset--color--secondary)",
 			"text": "var(--wp--preset--color--primary)"
 		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"right": "var:preset|spacing|50",
+				"bottom": "0",
+				"left": "var:preset|spacing|50"
+			}
+		},
 		"blocks": {
 			"core/post-date": {
 				"typography": {
