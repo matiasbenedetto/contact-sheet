@@ -69,12 +69,6 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--inter)"
 				}
-			},
-			"core/site-title": {
-				"typography": {
-					"textTransform": "uppercase",
-					"letterSpacing": "0.12em"
-				}
 			}
 		}
 	}

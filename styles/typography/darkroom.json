@@ -54,9 +54,7 @@
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--oswald)",
-					"fontWeight": "600",
-					"textTransform": "uppercase",
-					"letterSpacing": "0.02em"
+					"fontWeight": "600"
 				}
 			}
 		},
