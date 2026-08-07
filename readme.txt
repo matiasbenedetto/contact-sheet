@@ -106,8 +106,8 @@ Included in: assets/fonts/CalSans-SemiBold.ttf (license text in assets/fonts/OFL
 Typography style variation fonts
 All fonts below were downloaded from Google Fonts (https://fonts.google.com/), are
 licensed under the SIL Open Font License, Version 1.1 (https://opensource.org/licenses/OFL-1.1),
-and are included as woff2 files under assets/fonts/<variation>/ together with the
-license texts (assets/fonts/<variation>/OFL.txt).
+and are included as woff2 files under assets/fonts/<variation>/. The copyright
+notices of all bundled fonts and the license text are in assets/fonts/OFL.txt.
 
 IBM Plex Mono and IBM Plex Sans, Copyright 2017 IBM Corp.
 Source: https://fonts.google.com/specimen/IBM+Plex+Mono, https://fonts.google.com/specimen/IBM+Plex+Sans
