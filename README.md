@@ -78,6 +78,41 @@ voice:
 
 ![Typography variations](screenshots/typography-variations.png)
 
+Each variation below is shown on the home page, the single template, and the
+comment form.
+
+### Contact Print — IBM Plex Mono / IBM Plex Sans
+
+![Contact Print typography variation](screenshots/typography/contact-print.jpg)
+
+### Monograph — Playfair Display / EB Garamond
+
+![Monograph typography variation](screenshots/typography/monograph.jpg)
+
+### Reportage — Libre Franklin / PT Serif
+
+![Reportage typography variation](screenshots/typography/reportage.jpg)
+
+### Gallery — Archivo / Inter
+
+![Gallery typography variation](screenshots/typography/gallery.jpg)
+
+### Darkroom — Oswald / Source Sans 3
+
+![Darkroom typography variation](screenshots/typography/darkroom.jpg)
+
+### Field Notes — Bitter / Karla
+
+![Field Notes typography variation](screenshots/typography/field-notes.jpg)
+
+### Studio — DM Serif Display / DM Sans
+
+![Studio typography variation](screenshots/typography/studio.jpg)
+
+### Large Format — Fraunces / Work Sans
+
+![Large Format typography variation](screenshots/typography/large-format.jpg)
+
 ## Requirements
 
 - WordPress 6.8+
