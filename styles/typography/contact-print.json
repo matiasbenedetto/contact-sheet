@@ -77,12 +77,19 @@
 		"blocks": {
 			"core/post-date": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)"
+					"fontFamily": "var(--wp--preset--font-family--ibm-plex-mono)",
+					"fontWeight": "400"
 				}
 			},
 			"core/post-template": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"textTransform": "uppercase",
+					"letterSpacing": "0.06em"
 				}
 			}
 		}

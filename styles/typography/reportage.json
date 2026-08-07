@@ -69,7 +69,9 @@
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--libre-franklin)"
+					"fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+					"fontWeight": "800",
+					"letterSpacing": "-0.01em"
 				}
 			}
 		},

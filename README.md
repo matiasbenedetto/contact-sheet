@@ -61,16 +61,20 @@ each pair a heading face with a body face, bundled as woff2 files so no
 third-party requests are made. Combine any of them with any color variation in
 **Appearance → Editor → Styles**.
 
+Heading weights and treatments are deliberately spread across the range — from
+Fraunces Light to Libre Franklin ExtraBold — so each variation has its own
+voice:
+
 | Variation | Headings | Body |
 |---|---|---|
-| Contact Print | IBM Plex Mono | IBM Plex Sans |
-| Monograph | Playfair Display | EB Garamond |
-| Reportage | Libre Franklin | PT Serif |
-| Gallery | Archivo | Inter |
-| Darkroom | Oswald | Source Sans 3 |
-| Field Notes | Bitter | Karla |
-| Studio | DM Serif Display | DM Sans |
-| Large Format | Fraunces | Work Sans |
+| Contact Print | IBM Plex Mono 600, uppercase site title, monospaced dates | IBM Plex Sans |
+| Monograph | Playfair Display 500 | EB Garamond |
+| Reportage | Libre Franklin 800, tight tracking | PT Serif |
+| Gallery | Archivo 500, uppercase wide-tracked site title | Inter |
+| Darkroom | Oswald 600, uppercase | Source Sans 3 |
+| Field Notes | Bitter 800 | Karla |
+| Studio | DM Serif Display 400, italic site title | DM Sans |
+| Large Format | Fraunces 380 (light) | Work Sans |
 
 ![Typography variations](screenshots/typography-variations.png)
 

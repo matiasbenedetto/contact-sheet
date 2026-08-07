@@ -53,7 +53,8 @@
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--playfair-display)"
+					"fontFamily": "var(--wp--preset--font-family--playfair-display)",
+					"fontWeight": "500"
 				}
 			}
 		},

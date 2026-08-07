@@ -76,6 +76,11 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--dm-sans)"
 				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontStyle": "italic"
+				}
 			}
 		}
 	}
