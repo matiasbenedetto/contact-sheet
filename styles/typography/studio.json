@@ -1,0 +1,82 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Studio",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"DM Serif Display\", Didot, serif",
+					"name": "DM Serif Display",
+					"slug": "dm-serif-display",
+					"fontFace": [
+						{
+							"fontFamily": "DM Serif Display",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/studio/DMSerifDisplay.woff2"
+							]
+						},
+						{
+							"fontFamily": "DM Serif Display",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/studio/DMSerifDisplay-Italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"DM Sans\", system-ui, sans-serif",
+					"name": "DM Sans",
+					"slug": "dm-sans",
+					"fontFace": [
+						{
+							"fontFamily": "DM Sans",
+							"fontStyle": "normal",
+							"fontWeight": "100 1000",
+							"src": [
+								"file:./assets/fonts/studio/DMSans.woff2"
+							]
+						},
+						{
+							"fontFamily": "DM Sans",
+							"fontStyle": "italic",
+							"fontWeight": "100 1000",
+							"src": [
+								"file:./assets/fonts/studio/DMSans-Italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--dm-sans)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--dm-serif-display)",
+					"fontWeight": "400"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--dm-sans)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--dm-sans)"
+				}
+			}
+		}
+	}
+}

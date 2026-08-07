@@ -22,7 +22,8 @@ width, with diffuse drop shadows so they read like printed photographs.
 - **Two-color palette** with style variations.
 - **Full-site editing** — block templates for home, single, archive, search,
   page, and 404, all editable in the Site Editor.
-- Cal Sans + system-ui typography, translation-ready.
+- Cal Sans + system-ui typography, with eight bundled typography style
+  variations (Google Fonts, self-hosted), translation-ready.
 
 ## Screenshots
 
@@ -52,6 +53,65 @@ The theme ships a two-color (paper/ink) palette with eight style variations on
 top of the default. Switch between them in **Appearance → Editor → Styles**.
 
 ![Color variations](screenshots/color-variations.png)
+
+## Typography variations
+
+Eight typography style variations — the same number as the color variations —
+each pair a heading face with a body face, bundled as woff2 files so no
+third-party requests are made. Combine any of them with any color variation in
+**Appearance → Editor → Styles**.
+
+Heading weights and treatments are deliberately spread across the range — from
+Fraunces Light to Libre Franklin ExtraBold — so each variation has its own
+voice:
+
+| Variation | Headings | Body |
+|---|---|---|
+| Contact Print | IBM Plex Mono 600, monospaced dates | IBM Plex Sans |
+| Monograph | Playfair Display 500 | EB Garamond |
+| Reportage | Libre Franklin 800, tight tracking | PT Serif |
+| Gallery | Archivo 500 | Inter |
+| Darkroom | Oswald 600 | Source Sans 3 |
+| Field Notes | Bitter 800 | Karla |
+| Studio | DM Serif Display 400 | DM Sans |
+| Large Format | Fraunces 380 (light) | Work Sans |
+
+![Typography variations](screenshots/typography-variations.png)
+
+Each variation below is shown on the home page, the single template, and the
+comment form.
+
+### Contact Print — IBM Plex Mono / IBM Plex Sans
+
+![Contact Print typography variation](screenshots/typography/contact-print.jpg)
+
+### Monograph — Playfair Display / EB Garamond
+
+![Monograph typography variation](screenshots/typography/monograph.jpg)
+
+### Reportage — Libre Franklin / PT Serif
+
+![Reportage typography variation](screenshots/typography/reportage.jpg)
+
+### Gallery — Archivo / Inter
+
+![Gallery typography variation](screenshots/typography/gallery.jpg)
+
+### Darkroom — Oswald / Source Sans 3
+
+![Darkroom typography variation](screenshots/typography/darkroom.jpg)
+
+### Field Notes — Bitter / Karla
+
+![Field Notes typography variation](screenshots/typography/field-notes.jpg)
+
+### Studio — DM Serif Display / DM Sans
+
+![Studio typography variation](screenshots/typography/studio.jpg)
+
+### Large Format — Fraunces / Work Sans
+
+![Large Format typography variation](screenshots/typography/large-format.jpg)
 
 ## Requirements
 

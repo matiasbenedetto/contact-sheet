@@ -1,4 +1,59 @@
+The fonts bundled with this theme are licensed under the SIL Open Font
+License, Version 1.1. The copyright and reserved-font-name notices for
+each font family are listed below, followed by a single copy of the
+license text.
+
+
+Cal Sans (assets/fonts/CalSans-SemiBold.ttf)
 Copyright (c) 2022 CalCom, Inc.
+
+(assets/fonts/contact-print/)
+Copyright © 2017 IBM Corp. with Reserved Font Name "Plex"
+
+(assets/fonts/monograph/)
+Copyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name "Playfair Display"
+
+(assets/fonts/monograph/)
+Copyright 2017 The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12)
+
+(assets/fonts/reportage/)
+Copyright 2020 The Libre Franklin Project Authors (https://github.com/googlefonts/Libre-Franklin)
+
+(assets/fonts/reportage/)
+Copyright (c) 2010, ParaType Ltd. (http://www.paratype.com/public),
+with Reserved Font Names "PT Sans", "PT Serif" and "ParaType".
+
+(assets/fonts/gallery/)
+Copyright 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
+
+(assets/fonts/gallery/)
+Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
+
+(assets/fonts/darkroom/)
+Copyright 2016 The Oswald Project Authors (https://github.com/googlefonts/OswaldFont)
+
+(assets/fonts/darkroom/)
+Copyright 2010-2020 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe in the United States and/or other countries.
+
+(assets/fonts/field-notes/)
+Copyright 2011 The Bitter Project Authors (https://github.com/solmatas/BitterPro)
+with Reserved Font Name "Bitter Pro".
+
+(assets/fonts/field-notes/)
+Copyright 2019 The Karla Project Authors (https://github.com/googlefonts/karla)
+
+(assets/fonts/studio/)
+Copyright 2014-2018 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe in the United States and/or other countries. Copyright 2019 Google LLC.
+
+(assets/fonts/studio/)
+Copyright 2014 The DM Sans Project Authors (https://github.com/googlefonts/dm-fonts)
+
+(assets/fonts/large-format/)
+Copyright 2018 The Fraunces Project Authors (https://github.com/undercasetype/Fraunces)
+
+(assets/fonts/large-format/)
+Copyright 2019 The Work Sans Project Authors (https://github.com/weiweihuanghuang/Work-Sans)
+
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

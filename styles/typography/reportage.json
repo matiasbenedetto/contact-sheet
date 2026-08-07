@@ -1,0 +1,91 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Reportage",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Libre Franklin\", \"Franklin Gothic Medium\", sans-serif",
+					"name": "Libre Franklin",
+					"slug": "libre-franklin",
+					"fontFace": [
+						{
+							"fontFamily": "Libre Franklin",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/reportage/LibreFranklin.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"PT Serif\", Georgia, serif",
+					"name": "PT Serif",
+					"slug": "pt-serif",
+					"fontFace": [
+						{
+							"fontFamily": "PT Serif",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/reportage/PTSerif-400.woff2"
+							]
+						},
+						{
+							"fontFamily": "PT Serif",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/reportage/PTSerif-700.woff2"
+							]
+						},
+						{
+							"fontFamily": "PT Serif",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/reportage/PTSerif-Italic-400.woff2"
+							]
+						},
+						{
+							"fontFamily": "PT Serif",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/reportage/PTSerif-Italic-700.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--pt-serif)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--libre-franklin)",
+					"fontWeight": "800",
+					"letterSpacing": "-0.01em"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--pt-serif)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--pt-serif)"
+				}
+			}
+		}
+	}
+}

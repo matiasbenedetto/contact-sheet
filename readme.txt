@@ -103,6 +103,51 @@ License: SIL Open Font License, Version 1.1, https://opensource.org/licenses/OFL
 Source: https://github.com/calcom/font
 Included in: assets/fonts/CalSans-SemiBold.ttf (license text in assets/fonts/OFL.txt)
 
+Typography style variation fonts
+All fonts below were downloaded from Google Fonts (https://fonts.google.com/), are
+licensed under the SIL Open Font License, Version 1.1 (https://opensource.org/licenses/OFL-1.1),
+and are included as woff2 files under assets/fonts/<variation>/. The copyright
+notices of all bundled fonts and the license text are in assets/fonts/OFL.txt.
+
+IBM Plex Mono and IBM Plex Sans, Copyright 2017 IBM Corp.
+Source: https://fonts.google.com/specimen/IBM+Plex+Mono, https://fonts.google.com/specimen/IBM+Plex+Sans
+Included in: assets/fonts/contact-print/
+
+Playfair Display, Copyright 2017 The Playfair Display Project Authors
+EB Garamond, Copyright 2017 The EB Garamond Project Authors
+Source: https://fonts.google.com/specimen/Playfair+Display, https://fonts.google.com/specimen/EB+Garamond
+Included in: assets/fonts/monograph/
+
+Libre Franklin, Copyright 2020 The Libre Franklin Project Authors
+PT Serif, Copyright 2010 ParaType Ltd.
+Source: https://fonts.google.com/specimen/Libre+Franklin, https://fonts.google.com/specimen/PT+Serif
+Included in: assets/fonts/reportage/
+
+Archivo, Copyright 2020 The Archivo Project Authors
+Inter, Copyright 2020 The Inter Project Authors
+Source: https://fonts.google.com/specimen/Archivo, https://fonts.google.com/specimen/Inter
+Included in: assets/fonts/gallery/
+
+Oswald, Copyright 2016 The Oswald Project Authors
+Source Sans 3, Copyright 2010-2020 Adobe
+Source: https://fonts.google.com/specimen/Oswald, https://fonts.google.com/specimen/Source+Sans+3
+Included in: assets/fonts/darkroom/
+
+Bitter, Copyright 2011 The Bitter Project Authors
+Karla, Copyright 2019 The Karla Project Authors
+Source: https://fonts.google.com/specimen/Bitter, https://fonts.google.com/specimen/Karla
+Included in: assets/fonts/field-notes/
+
+DM Serif Display, Copyright 2014-2018 Adobe, Copyright 2019 Google LLC
+DM Sans, Copyright 2014 The DM Sans Project Authors
+Source: https://fonts.google.com/specimen/DM+Serif+Display, https://fonts.google.com/specimen/DM+Sans
+Included in: assets/fonts/studio/
+
+Fraunces, Copyright 2018 The Fraunces Project Authors
+Work Sans, Copyright 2019 The Work Sans Project Authors
+Source: https://fonts.google.com/specimen/Fraunces, https://fonts.google.com/specimen/Work+Sans
+Included in: assets/fonts/large-format/
+
 Images
 All images (screenshot.jpg and the images in screenshots/) are photographs taken by Matias Benedetto, https://mebenedetto.com
 Copyright (c) 2025 Matias Benedetto
