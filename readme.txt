@@ -3,7 +3,7 @@ Contributors: mmattiiaass
 Requires at least: 6.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 1.2.7
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, photography, one-column, custom-logo, block-patterns, block-styles, full-site-editing, translation-ready
@@ -37,6 +37,12 @@ The demo site's full content (photo posts, pages, and images) is available as a 
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.3.0 =
+* Add eight typography style variations with bundled Google Fonts: Contact Print, Darkroom, Field Notes, Gallery, Large Format, Monograph, Reportage, and Studio
+* Consolidate the bundled font licenses into a single OFL.txt
+* Credit the theme screenshot images as AI-generated (Gemini) and license them CC0
+* Remove internal marketing assets that were being bundled into the theme zip (34MB down to 1.4MB)
 
 = 1.2.7 =
 * Centralize lateral page padding via theme.json root styles
