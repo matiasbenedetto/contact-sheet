@@ -1,0 +1,90 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Contact Print",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"IBM Plex Mono\", \"Courier New\", monospace",
+					"name": "IBM Plex Mono",
+					"slug": "ibm-plex-mono",
+					"fontFace": [
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/contact-print/IBMPlexMono-400.woff2"
+							]
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/contact-print/IBMPlexMono-600.woff2"
+							]
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/contact-print/IBMPlexMono-Italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"IBM Plex Sans\", system-ui, sans-serif",
+					"name": "IBM Plex Sans",
+					"slug": "ibm-plex-sans",
+					"fontFace": [
+						{
+							"fontFamily": "IBM Plex Sans",
+							"fontStyle": "normal",
+							"fontWeight": "100 700",
+							"src": [
+								"file:./assets/fonts/contact-print/IBMPlexSans.woff2"
+							]
+						},
+						{
+							"fontFamily": "IBM Plex Sans",
+							"fontStyle": "italic",
+							"fontWeight": "100 700",
+							"src": [
+								"file:./assets/fonts/contact-print/IBMPlexSans-Italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--ibm-plex-mono)",
+					"fontWeight": "600"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)"
+				}
+			}
+		}
+	}
+}

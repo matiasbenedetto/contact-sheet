@@ -1,0 +1,73 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Gallery",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Archivo, sans-serif",
+					"name": "Archivo",
+					"slug": "archivo",
+					"fontFace": [
+						{
+							"fontFamily": "Archivo",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/gallery/Archivo.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Inter, system-ui, sans-serif",
+					"name": "Inter",
+					"slug": "inter",
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/gallery/Inter.woff2"
+							]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontStyle": "italic",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/gallery/Inter-Italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--inter)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--archivo)"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)"
+				}
+			}
+		}
+	}
+}

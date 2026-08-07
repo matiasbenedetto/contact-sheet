@@ -22,7 +22,8 @@ width, with diffuse drop shadows so they read like printed photographs.
 - **Two-color palette** with style variations.
 - **Full-site editing** — block templates for home, single, archive, search,
   page, and 404, all editable in the Site Editor.
-- Cal Sans + system-ui typography, translation-ready.
+- Cal Sans + system-ui typography, with eight bundled typography style
+  variations (Google Fonts, self-hosted), translation-ready.
 
 ## Screenshots
 
@@ -52,6 +53,26 @@ The theme ships a two-color (paper/ink) palette with eight style variations on
 top of the default. Switch between them in **Appearance → Editor → Styles**.
 
 ![Color variations](screenshots/color-variations.png)
+
+## Typography variations
+
+Eight typography style variations — the same number as the color variations —
+each pair a heading face with a body face, bundled as woff2 files so no
+third-party requests are made. Combine any of them with any color variation in
+**Appearance → Editor → Styles**.
+
+| Variation | Headings | Body |
+|---|---|---|
+| Contact Print | IBM Plex Mono | IBM Plex Sans |
+| Monograph | Playfair Display | EB Garamond |
+| Reportage | Libre Franklin | PT Serif |
+| Gallery | Archivo | Inter |
+| Darkroom | Oswald | Source Sans 3 |
+| Field Notes | Bitter | Karla |
+| Studio | DM Serif Display | DM Sans |
+| Large Format | Fraunces | Work Sans |
+
+![Typography variations](screenshots/typography-variations.png)
 
 ## Requirements
 

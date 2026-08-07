@@ -1,0 +1,73 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Field Notes",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Bitter, Georgia, serif",
+					"name": "Bitter",
+					"slug": "bitter",
+					"fontFace": [
+						{
+							"fontFamily": "Bitter",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/field-notes/Bitter.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Karla, system-ui, sans-serif",
+					"name": "Karla",
+					"slug": "karla",
+					"fontFace": [
+						{
+							"fontFamily": "Karla",
+							"fontStyle": "normal",
+							"fontWeight": "200 800",
+							"src": [
+								"file:./assets/fonts/field-notes/Karla.woff2"
+							]
+						},
+						{
+							"fontFamily": "Karla",
+							"fontStyle": "italic",
+							"fontWeight": "200 800",
+							"src": [
+								"file:./assets/fonts/field-notes/Karla-Italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--karla)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bitter)"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--karla)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--karla)"
+				}
+			}
+		}
+	}
+}

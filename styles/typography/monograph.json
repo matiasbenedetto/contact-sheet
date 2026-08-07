@@ -1,0 +1,73 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Monograph",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Playfair Display\", serif",
+					"name": "Playfair Display",
+					"slug": "playfair-display",
+					"fontFace": [
+						{
+							"fontFamily": "Playfair Display",
+							"fontStyle": "normal",
+							"fontWeight": "400 900",
+							"src": [
+								"file:./assets/fonts/monograph/PlayfairDisplay.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"EB Garamond\", Garamond, Georgia, serif",
+					"name": "EB Garamond",
+					"slug": "eb-garamond",
+					"fontFace": [
+						{
+							"fontFamily": "EB Garamond",
+							"fontStyle": "normal",
+							"fontWeight": "400 800",
+							"src": [
+								"file:./assets/fonts/monograph/EBGaramond.woff2"
+							]
+						},
+						{
+							"fontFamily": "EB Garamond",
+							"fontStyle": "italic",
+							"fontWeight": "400 800",
+							"src": [
+								"file:./assets/fonts/monograph/EBGaramond-Italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--eb-garamond)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--playfair-display)"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--eb-garamond)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--eb-garamond)"
+				}
+			}
+		}
+	}
+}

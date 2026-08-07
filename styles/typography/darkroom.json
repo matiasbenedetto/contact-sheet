@@ -1,0 +1,74 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"title": "Darkroom",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Oswald, \"Arial Narrow\", sans-serif-condensed, sans-serif",
+					"name": "Oswald",
+					"slug": "oswald",
+					"fontFace": [
+						{
+							"fontFamily": "Oswald",
+							"fontStyle": "normal",
+							"fontWeight": "200 700",
+							"src": [
+								"file:./assets/fonts/darkroom/Oswald.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"Source Sans 3\", system-ui, sans-serif",
+					"name": "Source Sans 3",
+					"slug": "source-sans-3",
+					"fontFace": [
+						{
+							"fontFamily": "Source Sans 3",
+							"fontStyle": "normal",
+							"fontWeight": "200 900",
+							"src": [
+								"file:./assets/fonts/darkroom/SourceSans3.woff2"
+							]
+						},
+						{
+							"fontFamily": "Source Sans 3",
+							"fontStyle": "italic",
+							"fontWeight": "200 900",
+							"src": [
+								"file:./assets/fonts/darkroom/SourceSans3-Italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--source-sans-3)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--oswald)",
+					"fontWeight": "500"
+				}
+			}
+		},
+		"blocks": {
+			"core/post-date": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--source-sans-3)"
+				}
+			},
+			"core/post-template": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--source-sans-3)"
+				}
+			}
+		}
+	}
+}
