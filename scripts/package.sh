@@ -48,6 +48,7 @@ rsync -a \
   --exclude 'playground' \
   --exclude 'workdir' \
   --exclude 'demo-site' \
+  --exclude 'social' \
   ./ "$STAGE/"
 
 echo "▶ Zipping…"
@@ -55,4 +56,16 @@ rm -f "$ZIP"
 ( cd "$DIST" && zip -rq "$ZIP" "$SLUG" )
 
 rm -rf "$DIST"
-echo "✓ Created $ZIP"
+
+# The exclude list above is a denylist, so anything new and untracked in the
+# repo root ships by default. Fail loudly on the symptom — a zip far larger
+# than the theme's real payload — rather than publishing the bloat.
+MAX_KB=8192
+SIZE_KB=$(( $(wc -c < "$ZIP") / 1024 ))
+if [ "$SIZE_KB" -gt "$MAX_KB" ]; then
+	echo "Refusing to package: ${ZIP} is ${SIZE_KB}KB (limit ${MAX_KB}KB)." >&2
+	echo "Something dev-only is leaking in. Inspect with: unzip -l ${ZIP}" >&2
+	exit 1
+fi
+
+echo "✓ Created $ZIP (${SIZE_KB}KB)"
