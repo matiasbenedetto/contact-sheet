@@ -149,6 +149,5 @@ Source: https://fonts.google.com/specimen/Fraunces, https://fonts.google.com/spe
 Included in: assets/fonts/large-format/
 
 Images
-All images (screenshot.jpg and the images in screenshots/) are photographs taken by Matias Benedetto, https://mebenedetto.com
-Copyright (c) 2025 Matias Benedetto
-License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/
+The images included in the theme screenshot (screenshot.jpg and the images in screenshots/) were generated with AI using the Gemini image model.
+License: CC0 1.0 Universal (Public Domain), https://creativecommons.org/publicdomain/zero/1.0/
